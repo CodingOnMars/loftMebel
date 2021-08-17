@@ -1,0 +1,162 @@
+@media (min-width: 768px) {
+    .header {
+        &__inner {
+            flex-wrap: nowrap;
+        }
+
+        &__search {
+            order: 0;
+            width: unset;
+            margin-top: 0;
+        }
+    }
+
+    .menu {
+        width: 35%;
+        overflow: auto;
+
+        &__list {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__list--tablet {
+            display: flex;
+        }
+
+        &__link--delivery {
+            display: none;
+        }
+
+        &__link {
+            &--kitchen::before {
+                content: url("../images/content/menu/kitchen-icon.svg");
+            }
+
+            &--bedroom::before {
+                content: url("../images/content/menu/bedroom-icon.svg");
+            }
+
+            &--livingroom::before {
+                content: url("../images/content/menu/livingroom-icon.svg");
+            }
+
+            &--closet::before {
+                content: url("../images/content/menu/closet-icon.svg");
+            }
+
+            &--office::before {
+                content: url("../images/content/menu/office-icon.svg");
+            }
+
+            &--childrensroom::before {
+                content: url("../images/content/menu/childrensroom-icon.svg");
+            }
+
+            &--sale::before {
+                content: url("../images/content/menu/sale-icon_red.svg");
+            }
+
+            &--new::before {
+                content: url("../images/content/menu/new-icon_yellow.svg");
+            }
+
+            &--mattress::before {
+                content: url("../images/content/menu/mattress-icon.svg");
+            }
+
+            &--armchair::before {
+                content: url("../images/content/menu/armchair-icon.svg");
+            }
+
+            &--cupboard::before {
+                content: url("../images/content/menu/cupboard-icon.svg");
+            }
+        }
+    }
+
+    .menu-right {
+        display: block;
+
+        &__link {
+            position: relative;
+            padding-left: 35px;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            &--phone {
+                display: none;
+            }
+
+            &--delivery {
+                padding-left: 35px;
+
+                &::before {
+                    content: url("../images/delivery-icon_black.svg");
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1140px) {
+    // .header {
+    //     &__inner {
+    //         justify-content: center;
+    //     }
+
+    //     &__logo {
+    //         margin-right: 35px;
+    //     }
+
+    //     &__nav-left {
+    //         margin-right: 40px;
+    //     }
+
+    //     &__search {
+    //         margin-right: 60px;
+    //     }
+
+    //     &__icons {
+    //         margin-left: 40px;
+    //     }
+    // }
+
+    .menu-burger,
+    .menu {
+        display: none;
+    }
+
+    .menu-left,
+    .menu-right {
+        display: block;
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .menu-right {
+
+        &__link--phone {
+            display: inline-block;
+            padding-left: 25px;
+
+            &::before {
+                content: url("../images/phone-icon_black.svg");
+            }
+        }
+    }
+}

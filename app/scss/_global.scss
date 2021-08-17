@@ -1,0 +1,37 @@
+.body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: $primary-color;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.category-text {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.footer {
+    flex: 0 0 auto;
+}

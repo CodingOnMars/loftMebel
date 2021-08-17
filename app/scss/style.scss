@@ -1,7 +1,9 @@
-@import 'vars';
+@import 'vendor';
 @import 'reset';
+@import 'vars';
 @import 'global';
 
 // Main components
-@import 'header';
-@import 'footer';
+@import 'components/header';
+@import 'components/footer';
+@import 'media';
