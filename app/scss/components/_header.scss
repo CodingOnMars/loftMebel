@@ -80,6 +80,7 @@
     background-color: $burgerMenu-bg;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
     transition: .5s ease-out;
+    overflow: auto;
     z-index: 2;
 
     &.active {
@@ -150,7 +151,7 @@
 
         &::before {
             position: absolute;
-            top: 0;
+            top: 2px;
             left: 0;
         }
 

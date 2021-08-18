@@ -1,3 +1,18 @@
+@media (min-width: 375px) {
+    .menu-burger {
+        width: 35px;
+        height: 20px;
+    }
+
+    .menu__btn {
+
+        &::before,
+        &::after {
+            height: 32px;
+        }
+    }
+}
+
 @media (min-width: 768px) {
     .header {
         &__inner {
@@ -13,7 +28,6 @@
 
     .menu {
         width: 35%;
-        overflow: auto;
 
         &__list {
             &:not(:last-child) {
@@ -54,8 +68,12 @@
                 content: url("../images/content/menu/childrensroom-icon.svg");
             }
 
-            &--sale::before {
-                content: url("../images/content/menu/sale-icon_red.svg");
+            &--sale {
+                color: $red-color;
+
+                &::before {
+                    content: url("../images/content/menu/sale-icon_red.svg");
+                }
             }
 
             &--new::before {
@@ -100,6 +118,83 @@
                     content: url("../images/delivery-icon_black.svg");
                 }
             }
+        }
+    }
+
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 42px;
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 34px;
+        }
+
+        &__title {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        &__address {
+            position: relative;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &__logo {
+            position: absolute;
+            top: -28px;
+            right: 0;
+        }
+
+        &__text {
+            margin-top: 40px;
+            max-width: 195px;
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__deals {
+            display: block;
+        }
+
+        &__deals-link {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        &__deals-link--sale {
+            color: $red-color;
+        }
+    }
+
+    .menu-footer {
+        display: flex;
+
+        &__list {
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .socials__link {
+        &:not(:last-child) {
+            margin-bottom: 0;
         }
     }
 }
