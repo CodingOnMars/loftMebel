@@ -1,0 +1,59 @@
+.footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+
+    &__title,
+    &__nav,
+    &__deals {
+        display: none;
+    }
+
+    &__address {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        max-width: 195px;
+    }
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link {
+        position: relative;
+        padding-left: 25px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 1px;
+            left: 0;
+        }
+
+        &--phone::before {
+            content: url("../images/phone-icon_black.svg");
+        }
+
+        &--instagram {
+            text-transform: uppercase;
+
+            &::before {
+                content: url("../images/instagram.svg");
+            }
+
+        }
+
+        &--email::before {
+            content: url("../images/mail.svg");
+        }
+    }
+}

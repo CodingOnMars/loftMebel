@@ -1,0 +1,214 @@
+.header {
+    padding-top: 28px;
+    padding-bottom: 15px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    &__burger {
+        margin-right: 18px;
+    }
+
+    &__nav-left,
+    &__nav-right {
+        display: none;
+    }
+
+    &__search {
+        order: 4;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    &__icons {
+        margin-left: 20px;
+    }
+}
+
+.menu-burger {
+    position: relative;
+    border: none;
+    padding: 0;
+    width: 25px;
+    height: 12px;
+    color: $black-color;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        top: calc(100% - 2px);
+    }
+
+    &__line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+        transform: translateY((-50%));
+
+    }
+}
+
+.menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 21px 16px 39px 62px;
+    background-color: $burgerMenu-bg;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    transition: .5s ease-out;
+    overflow: auto;
+    z-index: 2;
+
+    &.active {
+        top: 0;
+    }
+
+    &__btn {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 14px;
+        right: 14px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            right: 15px;
+            width: 2px;
+            height: 28px;
+            background-color: $black-color;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    &__list--tablet {
+        display: none;
+    }
+
+    &__item {
+        font-size: 20px;
+        color: $dove-gray;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item--label {
+        font-weight: 500;
+        font-size: 22px;
+        color: $primary-color;
+    }
+
+    &__item--active {
+        background: $burgerMenu-bg--active;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    &__link {
+        position: relative;
+        padding-left: 35px;
+
+        &::before {
+            position: absolute;
+            top: 2px;
+            left: 0;
+        }
+
+        &--home::before {
+            content: url("../images/content/menu/home-icon.svg");
+        }
+
+        &--about::before {
+            content: url("../images/content/menu/about-icon.svg");
+        }
+
+        &--contacts::before {
+            content: url("../images/content/menu/contacts-icon.svg");
+        }
+
+        &--phone::before {
+            content: url("../images/content/menu/phone-icon_grey.svg");
+        }
+
+        &--delivery::before {
+            content: url("../images/content/menu/delivery-icon_grey.svg");
+        }
+    }
+}
+
+.search {
+
+    &__input {
+        width: 100%;
+        padding: 12px 15px 15px 40px;
+        background-color: $burgerMenu-bg;
+        border: none;
+        background-image: url("../images/content/menu/search-icon.svg");
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: 15px 13px;
+
+        &::placeholder {
+            font-size: 16px;
+            color: $primary-color;
+        }
+    }
+}
+
+.menu-icons {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__svg {
+        width: 25px;
+        height: 25px;
+    }
+}
