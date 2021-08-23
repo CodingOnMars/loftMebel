@@ -1,6 +1,6 @@
 .header {
     padding-top: 28px;
-    padding-bottom: 15px;
+    padding-bottom: 21px;
 
     &__inner {
         display: flex;
@@ -211,4 +211,8 @@
         width: 25px;
         height: 25px;
     }
+}
+
+.menu-bottom {
+    display: none;
 }
