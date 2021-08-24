@@ -15,7 +15,9 @@
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-concat": "^2.6.1",
 		"gulp-imagemin": "^7.1.0",
+		"gulp-px2rem-converter": "^1.5.9",
 		"gulp-sass": "^4.1.0",
+		"gulp-svg-sprite": "^1.5.0",
 		"gulp-uglify-es": "^3.0.0"
 	}
 }
