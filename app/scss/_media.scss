@@ -17,6 +17,7 @@
     .header {
         &__inner {
             flex-wrap: nowrap;
+            margin-bottom: 25px;
         }
 
         &__search {
@@ -255,6 +256,10 @@
         }
     }
 
+    .menu-categories {
+        display: none;
+    }
+
     .menu-bottom {
         display: block;
         margin-top: 20px;
@@ -262,11 +267,12 @@
 
         &__list {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         &__item {
             position: relative;
-            display: flex;
             padding: 25px 23px;
         }
 
@@ -298,6 +304,7 @@
         left: 0;
         max-width: 200px;
         opacity: 0;
+        background-color: $white-color;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 
         &--etc {
@@ -315,8 +322,8 @@
         &__link {
             display: block;
             padding: 15px 25px;
-            font-size: 14px;
-            line-height: 87%;
+            font-size: 16px;
+            line-height: 120%;
         }
     }
 }

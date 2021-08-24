@@ -213,6 +213,42 @@
     }
 }
 
+.menu-categories {
+    display: flex;
+    padding-bottom: 20px;
+    overflow: auto;
+
+    &__item {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__svg {
+        padding: 16px;
+        background-color: $white-color;
+        width: 70px;
+        height: 70px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+
+        &--red {
+            fill: none;
+            stroke: $red-color;
+        }
+
+        &--yellow {
+            fill: $amber-color;
+        }
+    }
+
+    &__span {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
 .menu-bottom {
     display: none;
 }
