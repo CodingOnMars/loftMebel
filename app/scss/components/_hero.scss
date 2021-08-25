@@ -1,0 +1,39 @@
+.hero {
+    padding-bottom: 20px;
+
+    &__container {
+        padding-top: 37px;
+        padding-bottom: 32px;
+        background-image: url("../images/hero-320.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 60%;
+    }
+
+    &__inner {
+        max-width: 200px;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-family: Georgia, serif;
+        font-size: 25px;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 16px;
+        font-size: 14px;
+        line-height: 140%;
+        background-color: $white-color;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    }
+}

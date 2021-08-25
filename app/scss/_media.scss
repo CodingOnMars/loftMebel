@@ -122,6 +122,71 @@
         }
     }
 
+    .hero {
+        padding-bottom: 42px;
+
+        &__container {
+            position: relative;
+            padding-top: 71px;
+            padding-bottom: 66px;
+            background-color: $hero-bg;
+            background-image: url("../images/hero-sofa.png");
+            background-position: right;
+            background-size: 437px;
+            overflow: hidden;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                z-index: -1;
+            }
+
+            &::before {
+                top: -50%;
+                left: 50%;
+                background-color: $circle-second;
+                width: 800px;
+                height: 800px;
+            }
+
+            &::after {
+                top: 0;
+                right: 3%;
+                background-color: $circle-first;
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        &__inner {
+            padding-left: 40px;
+            max-width: 280px;
+        }
+
+        &__title,
+        &__desc {
+            color: $white-color;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+            font-size: 35px;
+            letter-spacing: 2px;
+        }
+
+        &__desc {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        &__link {
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
     .footer {
         padding-top: 30px;
         padding-bottom: 42px;
@@ -263,6 +328,7 @@
     .menu-bottom {
         display: block;
         margin-top: 20px;
+        margin-bottom: 15px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 
         &__list {
@@ -306,11 +372,11 @@
         opacity: 0;
         background-color: $white-color;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        z-index: 2;
 
         &--etc {
             left: auto;
             right: 0;
-
         }
 
         &__item {
@@ -321,15 +387,22 @@
 
         &__link {
             display: block;
-            padding: 15px 25px;
+            padding: 8px 25px;
             font-size: 16px;
             line-height: 120%;
+        }
+    }
+
+    .hero {
+        &__title {
+            font-size: 50px;
         }
     }
 }
 
 @media (hover: hover) and (pointer: fine) {
 
+    // Dropdown list hover
     .menu-bottom__item {
         transition: background-color .3s ease-out, color .3s ease-out;
 
@@ -373,6 +446,15 @@
             transition: color .3s ease-out, text-decoration .3s ease-out;
             color: $accent-color;
             text-decoration: underline;
+        }
+    }
+
+    .hero__link {
+        transition: background-color, .3s ease-in-out;
+
+        &:hover {
+            transition: background-color, .3s ease-in-out;
+            background-color: $amber-color;
         }
     }
 }
