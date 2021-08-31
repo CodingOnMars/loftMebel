@@ -398,11 +398,96 @@
             font-size: 50px;
         }
     }
+
+    // Start of Sale-hits sizes block
+    .sale-hits__sizes {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+
+    .sale-hits__sizes,
+    .sale-hits__btn {
+        display: block;
+    }
+
+    .hidden {
+        opacity: 0;
+        transition: opacity .5s ease-out;
+    }
+
+    .sizes {
+        &__title {
+            margin-bottom: 8px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        &__items {
+            display: flex;
+            gap: 15px;
+        }
+
+        &__item--pseudo {
+            position: relative;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: '×';
+                top: 10px;
+            }
+
+            &::before {
+                left: -15px;
+            }
+
+            &::after {
+                right: -10px;
+            }
+        }
+
+        &__subtitle,
+        &__value {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        &__subtitle {
+            margin-bottom: 10px;
+            color: $silver-dark;
+        }
+    }
+
+    .sale-hits__btn {
+        padding: 15px 45px;
+        font-size: 15px;
+        line-height: 150%;
+        color: $white-color;
+        background-color: $accent-color;
+    }
+
+    // End of Sale-hits sizes block
+
+    // Show sizes block and btn on hover
+    .sale-hits__item {
+        transition: box-shadow .3s ease-in-out;
+
+        &:hover {
+            transition: box-shadow .3s ease-in-out;
+            box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+
+            .sale-hits__sizes,
+            .sale-hits__btn {
+                transition: opacity .5s ease-out;
+                opacity: 1;
+            }
+        }
+    }
 }
 
 @media (hover: hover) and (pointer: fine) {
 
-    // Dropdown list hover
+    // Start of Dropdown list hover
     .menu-bottom__item {
         transition: background-color .3s ease-out, color .3s ease-out;
 
@@ -439,6 +524,8 @@
         }
     }
 
+    // End of Dropdown list hover
+
     .dropdown-list__link {
         transition: color .3s ease-out, text-decoration .3s ease-out;
 
@@ -449,12 +536,29 @@
         }
     }
 
-    .hero__link {
+    .hero__link,
+    .sale-hits__btn {
         transition: background-color, .3s ease-in-out;
 
         &:hover {
             transition: background-color, .3s ease-in-out;
-            background-color: $amber-color;
         }
+    }
+
+    .hero__link:hover {
+        background-color: $amber-color;
+    }
+
+    .sale-hits__svg {
+        transition: fill .3s ease;
+
+        &:hover {
+            transition: fill .3s ease;
+            fill: $red-color;
+        }
+    }
+
+    .sale-hits__btn:hover {
+        background-color: $primary-color;
     }
 }
