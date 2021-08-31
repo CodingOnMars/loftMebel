@@ -1,0 +1,82 @@
+.bestsellers {
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    &__items {
+        margin-top: 15px;
+    }
+}
+
+.sale-hits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
+    place-items: center;
+    gap: 15px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    &__item--discount {
+        position: relative;
+        background-image: url("../images/content//menu/sale-icon_red.svg");
+        background-repeat: no-repeat;
+        background-size: 17px;
+        background-position: top 29px left 20px;
+    }
+
+    &__discount {
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &__btn-close {
+        margin-bottom: 14px;
+        text-align: right;
+    }
+
+    &__svg {
+        width: 27px;
+        height: 27px;
+    }
+
+    &__title {
+        margin-top: 26px;
+        margin-bottom: 5px;
+    }
+
+    &__title,
+    &__span {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__text {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    &__span {
+
+        &--line-through {
+            margin-left: 6px;
+            text-decoration-line: line-through;
+            color: $silver-light;
+        }
+    }
+
+    &__sizes,
+    &__btn {
+        display: none;
+    }
+}
