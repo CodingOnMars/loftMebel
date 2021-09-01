@@ -2,9 +2,11 @@
 const menuBurger = document.querySelector('.menu-burger');
 const menu = document.querySelector('.menu');
 const menuBtn = document.querySelector('.menu__btn');
+const body = document.querySelector('body');
 
 const openMenu = () => {
 	menu.classList.toggle('active');
+	body.classList.toggle('lock');
 };
 
 menuBurger.addEventListener('click', openMenu);
