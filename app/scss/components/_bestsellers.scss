@@ -10,6 +10,10 @@
     &__items {
         margin-top: 15px;
     }
+
+    &__btn {
+        margin-top: 50px;
+    }
 }
 
 .sale-hits {
@@ -19,6 +23,10 @@
     gap: 15px;
 
     &__item {
+        display: none;
+    }
+
+    &__item--active {
         display: flex;
         flex-direction: column;
         padding: 20px;
@@ -79,4 +87,15 @@
     &__btn {
         display: none;
     }
+}
+
+.load-more {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 1140px;
+    font-size: 18px;
+    line-height: 150%;
+    color: $white-color;
+    background-color: $primary-color;
 }
