@@ -1,0 +1,25 @@
+.breadcrumbs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__list {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    &__item:not(last-child) {
+        position: relative;
+        padding-right: 25px;
+
+        &::before {
+            position: absolute;
+            content: '/\00a0';
+            top: 0;
+            left: -15px;
+        }
+    }
+
+    &__link {
+        color: $dove-gray;
+    }
+}
