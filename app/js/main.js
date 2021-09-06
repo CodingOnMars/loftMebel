@@ -1,4 +1,3 @@
-// Draft burger menu
 const menuBurger = document.querySelector('.menu-burger');
 const menu = document.querySelector('.menu');
 const menuBtn = document.querySelector('.menu__btn');
@@ -13,9 +12,9 @@ menuBurger.addEventListener('click', openMenu);
 menuBtn.addEventListener('click', openMenu);
 
 // Load more button
-const loadMore = document.querySelector('.load-more');
+const showMore = document.querySelector('.show-more');
 let currentItems = 4;
-loadMore.addEventListener('click', e => {
+showMore.addEventListener('click', e => {
 	const elementList = [
 		...document.querySelectorAll('.sale-hits .sale-hits__item'),
 	];
