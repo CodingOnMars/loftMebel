@@ -329,7 +329,7 @@
         display: block;
         margin-top: 20px;
         margin-bottom: 15px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        box-shadow: $default-shadow;
 
         &__list {
             display: flex;
@@ -371,7 +371,7 @@
         max-width: 200px;
         opacity: 0;
         background-color: $white-color;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        box-shadow: $default-shadow;
         z-index: 2;
 
         &--etc {
@@ -505,7 +505,7 @@
         transition: background-color .3s ease-out, color .3s ease-out;
 
         .menu-bottom__link {
-            transition: color .3s ease-out, color .3s ease-out;
+            transition: color .3s ease-out;
         }
 
         .menu-bottom__svg {
@@ -522,7 +522,7 @@
             }
 
             .menu-bottom__link {
-                transition: color .3s ease-out, color .3s ease-out;
+                transition: color .3s ease-out;
                 color: $white-color;
             }
 

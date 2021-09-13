@@ -4,11 +4,13 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         overflow-x: auto;
     }
 
     &__item:not(last-child) {
         position: relative;
+        margin-top: 10px;
         padding-right: 25px;
 
         &::before {
