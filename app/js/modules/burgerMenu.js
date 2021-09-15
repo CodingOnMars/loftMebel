@@ -1,4 +1,4 @@
-import get from './modules/getElement.js';
+import get from '../modules/getElement.js';
 
 // Open/close Burger menu
 const menu = get('.menu');

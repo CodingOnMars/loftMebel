@@ -1,3 +1,5 @@
+import './modules/burgerMenu.js';
+
 // Load more button
 const showMoreBtn = document.querySelector('.show-more');
 let currentItems = 4;

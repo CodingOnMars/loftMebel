@@ -1,3 +1,4 @@
+import '../modules/burgerMenu.js';
 import get from '../modules/getElement.js';
 import selectImg from '../modules/selectImg.js';
 

@@ -65,8 +65,8 @@ function images() {
 
 function scripts() {
 	return src([
-		'app/js/main.js',
-		'app/js/components/*.js',
+		'app/js/index.js',
+		'app/js/pages/*.js',
 		'app/js/modules/*.js',
 	]).pipe(browserSync.stream());
 }
