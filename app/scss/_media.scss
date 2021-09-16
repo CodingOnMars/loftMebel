@@ -187,6 +187,18 @@
         }
     }
 
+    .product-buy {
+        &__btn-svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        &__btn-text {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
     .footer {
         padding-top: 30px;
         padding-bottom: 42px;
@@ -460,10 +472,6 @@
 
     .sale-hits__btn {
         padding: 15px 45px;
-        font-size: 15px;
-        line-height: 150%;
-        color: $white-color;
-        background-color: $primary-color;
     }
 
     // End of Sale-hits sizes block
@@ -481,100 +489,6 @@
                 transition: opacity .5s ease-out;
                 opacity: 1;
             }
-        }
-    }
-}
-
-@media (hover: hover) and (pointer: fine) {
-
-    .menu-left__link,
-    .breadcrumbs__link,
-    .menu-footer__link,
-    .footer__deals-link,
-    .socials__link {
-        transition: text-decoration .5s ease-in-out;
-
-        &:hover {
-            transition: text-decoration .5s ease-in-out;
-            text-decoration: underline;
-        }
-    }
-
-    // Start of Dropdown list hover
-    .menu-bottom__item {
-        transition: background-color .3s ease-out, color .3s ease-out;
-
-        .menu-bottom__link {
-            transition: color .3s ease-out;
-        }
-
-        .menu-bottom__svg {
-            transition: fill .3s ease-out;
-        }
-
-        &:hover {
-            transition: background-color .3s ease-out, color .3s ease-out;
-            background-color: $accent-color;
-
-            .dropdown-list {
-                visibility: visible;
-                opacity: 1;
-            }
-
-            .menu-bottom__link {
-                transition: color .3s ease-out;
-                color: $white-color;
-            }
-
-            .menu-bottom__svg {
-                transition: fill .3s ease-out;
-                fill: $white-color;
-            }
-
-            .menu-bottom__svg--etc {
-                stroke: $white-color;
-            }
-        }
-    }
-
-    // End of Dropdown list hover
-
-    .dropdown-list__link {
-        transition: color .3s ease-out, text-decoration .3s ease-out;
-
-        &:hover {
-            transition: color .3s ease-out, text-decoration .3s ease-out;
-            color: $accent-color;
-            text-decoration: underline;
-        }
-    }
-
-    .hero__link {
-        transition: color .5s ease-in-out, background-color .5s ease-in-out;
-
-        &:hover {
-            transition: color .5s ease-in-out, background-color .5s ease-in-out;
-            color: $white-color;
-            background-color: $accent-color;
-        }
-    }
-
-    .sale-hits__svg {
-        transition: fill .3s ease;
-
-        &:hover {
-            transition: fill .3s ease;
-            fill: $red-color;
-        }
-    }
-
-    .sale-hits__btn,
-    .show-more {
-        transition: background-color, .3s ease-in-out;
-
-        &:hover {
-            transition: background-color, .3s ease-in-out;
-            background-color: $accent-color;
         }
     }
 }

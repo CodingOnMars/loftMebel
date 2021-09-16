@@ -1,0 +1,94 @@
+// Hover effects
+@media (hover: hover) and (pointer: fine) {
+
+    .menu-left__link,
+    .breadcrumbs__link,
+    .menu-footer__link,
+    .footer__deals-link,
+    .socials__link {
+        transition: text-decoration .5s ease-in-out;
+
+        &:hover {
+            transition: text-decoration .5s ease-in-out;
+            text-decoration: underline;
+        }
+    }
+
+    // Start of Dropdown list hover
+    .menu-bottom__item {
+        transition: background-color .3s ease-out, color .3s ease-out;
+
+        .menu-bottom__link {
+            transition: color .3s ease-out;
+        }
+
+        .menu-bottom__svg {
+            transition: fill .3s ease-out;
+        }
+
+        &:hover {
+            transition: background-color .3s ease-out, color .3s ease-out;
+            background-color: $accent-color;
+
+            .dropdown-list {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .menu-bottom__link {
+                transition: color .3s ease-out;
+                color: $white-color;
+            }
+
+            .menu-bottom__svg {
+                transition: fill .3s ease-out;
+                fill: $white-color;
+            }
+
+            .menu-bottom__svg--etc {
+                stroke: $white-color;
+            }
+        }
+    }
+
+    // End of Dropdown list hover
+
+    .dropdown-list__link {
+        transition: color .3s ease-out, text-decoration .3s ease-out;
+
+        &:hover {
+            transition: color .3s ease-out, text-decoration .3s ease-out;
+            color: $accent-color;
+            text-decoration: underline;
+        }
+    }
+
+    .hero__link {
+        transition: color .5s ease-in-out, background-color .5s ease-in-out;
+
+        &:hover {
+            transition: color .5s ease-in-out, background-color .5s ease-in-out;
+            color: $white-color;
+            background-color: $accent-color;
+        }
+    }
+
+    .wishlist-icon {
+        transition: fill .3s;
+
+        &:hover {
+            transition: fill .3s;
+            fill: $red-color;
+        }
+    }
+
+    .action-btn,
+    .show-more {
+        transition: background-color, .3s ease-in-out;
+
+        &:hover {
+            transition: background-color, .3s ease-in-out;
+            background-color: $accent-color;
+        }
+    }
+}

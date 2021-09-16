@@ -10,6 +10,39 @@
         padding-top: 5px;
         padding-bottom: 20px;
     }
+
+    &__title {
+        padding-top: 11px;
+        padding-bottom: 6px;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    &__category {
+        color: $dove-gray;
+    }
+
+    &__buy {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__options {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    &__bottom {
+        padding-top: 25px;
+    }
+
+    &__specs {
+        padding-top: 26px;
+    }
+
+    &__description {
+        padding-top: 20px;
+    }
 }
 
 .gallery {
@@ -21,16 +54,15 @@
 
     &__preview {
         display: flex;
-        gap: 10px;
     }
 
     &__img-container {
         padding: 5px 7px;
         box-shadow: $default-shadow;
 
-        // &:not(:last-child) {
-        //     margin-right: 10px;
-        // }
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
     }
 
     &__img {
@@ -51,5 +83,101 @@
         &:last-child {
             fill: $silver-dark;
         }
+    }
+}
+
+.product-buy {
+    display: flex;
+    align-items: center;
+
+    &__price {
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    &__btn--buy {
+        margin-left: 14px;
+        margin-right: 18px;
+        padding: 12px 50px;
+    }
+
+    &__btn--wishlist {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn-svg {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__btn-text {
+        display: none;
+    }
+
+    &__hidden-text {
+        display: none;
+    }
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-right: 25px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__input,
+    &__select--size {
+        padding: 7px 11px;
+        height: 40px;
+        border: none;
+        box-shadow: $default-shadow;
+    }
+
+    &__input {
+        width: 70px;
+    }
+
+    &__select--size {}
+}
+
+.color-select {
+
+    &,
+    &__option {
+        width: 70px;
+        height: 40px;
+        border: none;
+        box-shadow: $default-shadow;
+    }
+
+    &,
+    &__option--amber {
+        background-color: $amber-color;
+    }
+
+    &__option--chateau-green {
+        background-color: $chateau-green;
+    }
+
+    &__option--cinnabar {
+        background-color: $cinnabar;
+    }
+
+    &__option--roman-coffee {
+        background-color: $roman-coffee;
     }
 }

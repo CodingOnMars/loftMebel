@@ -120,7 +120,7 @@
                         <ul class="menu-icons__list">
                             <li class="menu-icons__item">
                                 <a href="#" class="menu-icons__link">
-                                    <svg class="menu-icons__svg">
+                                    <svg class="menu-icons__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
                                 </a>
@@ -456,58 +456,164 @@
 
             <section class="product">
                 <div class="container product__container">
-                    <div class="product__gallery gallery">
-                        <div class="gallery__main">
-                            <img class="gallery__cover" src="images/content/product-page/gallery-item_1.jpg"
-                                alt="product-photo">
+                    <div class="product__top">
+                        <div class="product__gallery gallery">
+                            <div class="gallery__main">
+                                <img class="gallery__cover" src="images/content/product-page/gallery-item_1.jpg"
+                                    alt="product-photo">
+                            </div>
+                            <div class="gallery__preview">
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_1.jpg"
+                                        alt="product-photo">
+                                </div>
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_2.jpg"
+                                        alt="product-photo">
+                                </div>
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_3.jpg "
+                                        alt="product-photo">
+                                </div>
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_4.jpg"
+                                        alt="product-photo">
+                                </div>
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_5.jpg"
+                                        alt="product-photo">
+                                </div>
+                            </div>
                         </div>
-                        <div class="gallery__preview">
-                            <div class="gallery__img-container">
-                                <img class="gallery__img" src="images/content/product-page/gallery-item_1.jpg"
-                                    alt="product-photo">
+                        <div class="product__info">
+                            <div class="product__rating rating">
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
                             </div>
-                            <div class="gallery__img-container">
-                                <img class="gallery__img" src="images/content/product-page/gallery-item_2.jpg"
-                                    alt="product-photo">
+                            <h2 class="product__title">Динс Velvet Yellow</h2>
+                            <p class="product__category">Диваны</p>
+                            <div class="product__buy product-buy">
+                                <span class="product-buy__price">24 690₽</span>
+                                <button
+                                    class="product-buy__btn product-buy__btn--buy action-btn btn-reset">Купить</button>
+                                <button class="product-buy__btn product-buy__btn--wishlist btn-reset">
+                                    <svg class="product-buy__btn-svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                    <span class="product-buy__btn-text">Добавить в желаемое</span>
+                                </button>
                             </div>
-                            <div class="gallery__img-container">
-                                <img class="gallery__img" src="images/content/product-page/gallery-item_3.jpg "
-                                    alt="product-photo">
+                            <div class="product__options options">
+                                <div class="options__item">
+                                    <label class="options__title" for="options-select-color">Цвет</label>
+                                    <select class="options__select color-select" id="options-select-color">
+                                        <option class="color-select__option color-select__option--amber" value="amber">
+                                        </option>
+                                        <option class="color-select__option color-select__option--chateau-green"
+                                            value="chateau-green">
+                                        </option>
+                                        <option class="color-select__option color-select__option--cinnabar"
+                                            value="cinnabar">
+                                        </option>
+                                        <option class="color-select__option color-select__option--roman-coffee"
+                                            value="roman-coffee">
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="options__item">
+                                    <label class="options__title" for="options__input">Количество</label>
+                                    <input class="options__input" type="number" min="0" max="10" placeholder="0">
+                                </div>
+                                <div class="options__item">
+                                    <label for="options-select-sizes" class="options__title">Размер (Д × Ш × В)</label>
+                                    <select class="options__select options__select--size" id="options-select-sizes">
+                                        <option class="options__option" value="218 СМ × 95 СМ × 90 СМ"
+                                            selected="selected">
+                                            218 СМ × 95 СМ × 90 СМ</option>
+                                        <option class="options__option" value="218 СМ × 95 СМ × 90 СМ">
+                                            218 СМ × 95 СМ × 90 СМ</option>
+                                        <option class="options__option" value="218 СМ × 95 СМ × 90 СМ">
+                                            218 СМ × 95 СМ × 90 СМ</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="gallery__img-container">
-                                <img class="gallery__img" src="images/content/product-page/gallery-item_4.jpg"
-                                    alt="product-photo">
-                            </div>
-                            <div class="gallery__img-container">
-                                <img class="gallery__img" src="images/content/product-page/gallery-item_5.jpg"
-                                    alt="product-photo">
+                            <div class="product__description product-desc">
+                                <h4 class="product-desc__title">Описание</h4>
+                                <p class="product-desc__text">
+                                    Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это
+                                    диван
+                                    «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку.
+                                    Элегантность, комфорт и функциональность, собранные воедино – «Динс» просто создан
+                                    для
+                                    размеренного отдыха в кругу семьи или компании друзей!
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="product__info">
-                        <div class="product__rating rating">
-                            <svg class="rating__svg">
-                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
-                            </svg>
-                            <svg class="rating__svg">
-                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
-                            </svg>
-                            <svg class="rating__svg">
-                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
-                            </svg>
-                            <svg class="rating__svg">
-                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
-                            </svg>
-                            <svg class="rating__svg">
-                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
-                            </svg>
+                    <div class="product__bottom">
+                        <div class="product__tabs tabs">
+                            <button class="tabs__btn">Характеристики</button>
+                            <button class="tabs__btn">Отзывы</button>
+                            <button class="tabs__btn">Доставка и оплата</button>
                         </div>
-                        <h2 class="product__title">Динс Velvet Yellow</h2>
-                        <p class="product__category">Диваны</p>
-                        <div class="product__buy product-buy">
-                            <span class="product-buy__price">24 690₽</span>
-                            <button class="product-buy__btn btn-reset">Купить</button>
-                            <button class="product-buy__btn btn-reset">Добавить в желаемое</button>
+                        <div class="product__specs specs">
+                            <div class="specs__items">
+                                <div class="specs__item">Размер</div>
+                                <div class="specs__item">218 × 95 × 90 (Дл. × Шир. × Выс.)</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Спальное место</div>
+                                <div class="specs__item">195 × 144 × 44 (Дл. × Шир. × Выс.)</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Посадочное место</div>
+                                <div class="specs__item">50 × 44 (Глуб. × Выс.)</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Каркас</div>
+                                <div class="specs__item">массив, фанера, ДВП, пружинная змейка</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Материал ножек</div>
+                                <div class="specs__item">массив</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Наполнение подушек</div>
+                                <div class="specs__item">крошка ППУ, холлофайбер</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Зарядное устройство USB</div>
+                                <div class="specs__item">нет</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Съемный чехол</div>
+                                <div class="specs__item">нет</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Декоративные подушки</div>
+                                <div class="specs__item">есть</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Вариант доставки</div>
+                                <div class="specs__item">в разобранном виде</div>
+                            </div>
+                            <div class="specs__items">
+                                <div class="specs__item">Производитель</div>
+                                <div class="specs__item">Россия</div>
+                            </div>
                         </div>
                     </div>
                 </div>
