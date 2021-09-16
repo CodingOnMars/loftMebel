@@ -181,3 +181,16 @@
         background-color: $roman-coffee;
     }
 }
+
+.product-desc {
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &__text {
+        max-width: 450px;
+        line-height: 150%;
+    }
+}
