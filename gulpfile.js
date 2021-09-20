@@ -52,15 +52,23 @@ function images() {
 		.pipe(dest('dist/images'));
 }
 
+// function scripts() {
+// 	return src([
+// 		// 'node_modules/jquery/dist/jquery.js',
+// 		'app/js/main.js',
+// 	])
+// 		.pipe(concat('main.min.js'))
+// 		.pipe(uglify())
+// 		.pipe(dest('app/js'))
+// 		.pipe(browserSync.stream());
+// }
+
 function scripts() {
 	return src([
-		// 'node_modules/jquery/dist/jquery.js',
-		'app/js/main.js',
-	])
-		.pipe(concat('main.min.js'))
-		.pipe(uglify())
-		.pipe(dest('app/js'))
-		.pipe(browserSync.stream());
+		'app/js/index.js',
+		'app/js/pages/*.js',
+		'app/js/modules/*.js',
+	]).pipe(browserSync.stream());
 }
 
 function styles() {
@@ -70,7 +78,7 @@ function styles() {
 		.pipe(pxToRem())
 		.pipe(
 			autoprefixer({
-				overrideBrowserslist: ['last 8 version'],
+				overrideBrowserslist: ['last 5 version'],
 				grid: true,
 			})
 		)
@@ -92,7 +100,8 @@ function build() {
 
 function watching() {
 	watch(['app/scss/**/*.scss'], styles);
-	watch(['app/js/main.js', '!app/js/main.min.js'], scripts);
+	// watch(['app/js/main.js', '!app/js/main.min.js'], scripts);
+	watch(['app/js/**/*.js'], scripts);
 	watch(['app/*.html']).on('change', browserSync.reload);
 	// watch(['app/images/svg/**.svg'], svgSprites);
 }
@@ -106,4 +115,4 @@ exports.svgSprites = svgSprites;
 exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, svgSprites, images, build);
-exports.default = parallel(styles, scripts, svgSprites, browsersync, watching);
+exports.default = parallel(styles, svgSprites, browsersync, watching);

@@ -187,6 +187,56 @@
         }
     }
 
+    // Product page
+    .product {
+        padding-bottom: 50px;
+    }
+
+    // Product gallery block
+    .gallery {
+        &__cover {
+            max-height: 250px;
+        }
+    }
+
+    // Product page buy block
+    .product-buy {
+        &__btn-svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        &__btn-text {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+    // Product page specs block
+    .specs {
+        &__items {
+            flex-direction: row;
+            align-items: flex-end;
+            max-width: 700px;
+
+            &:not(:last-child) {
+                margin-top: 25px;
+            }
+        }
+
+        &__divider {
+            flex-grow: 1;
+            margin-right: 10px;
+            margin-bottom: 2px;
+            margin-left: 10px;
+            border-bottom: 1px dashed $dove-gray;
+        }
+
+        &__value {
+            margin-top: 10px;
+        }
+    }
+
     .footer {
         padding-top: 30px;
         padding-bottom: 42px;
@@ -329,7 +379,7 @@
         display: block;
         margin-top: 20px;
         margin-bottom: 15px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        box-shadow: $primary-shadow;
 
         &__list {
             display: flex;
@@ -371,7 +421,7 @@
         max-width: 200px;
         opacity: 0;
         background-color: $white-color;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        box-shadow: $primary-shadow;
         z-index: 2;
 
         &--etc {
@@ -460,10 +510,6 @@
 
     .sale-hits__btn {
         padding: 15px 45px;
-        font-size: 15px;
-        line-height: 150%;
-        color: $white-color;
-        background-color: $accent-color;
     }
 
     // End of Sale-hits sizes block
@@ -474,7 +520,7 @@
 
         &:hover {
             transition: box-shadow .3s ease-in-out;
-            box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+            box-shadow: $primary-shadow;
 
             .sale-hits__sizes,
             .sale-hits__btn {
@@ -483,82 +529,19 @@
             }
         }
     }
-}
 
-@media (hover: hover) and (pointer: fine) {
+    // Product page
+    .product {
+        padding-bottom: 90px;
 
-    // Start of Dropdown list hover
-    .menu-bottom__item {
-        transition: background-color .3s ease-out, color .3s ease-out;
-
-        .menu-bottom__link {
-            transition: color .3s ease-out, color .3s ease-out;
+        &__top {
+            display: flex;
+            align-items: center;
         }
 
-        .menu-bottom__svg {
-            transition: fill .3s ease-out;
+        &__gallery {
+            margin-right: 30px;
+            max-width: 620px;
         }
-
-        &:hover {
-            transition: background-color .3s ease-out, color .3s ease-out;
-            background-color: $accent-color;
-
-            .dropdown-list {
-                visibility: visible;
-                opacity: 1;
-            }
-
-            .menu-bottom__link {
-                transition: color .3s ease-out, color .3s ease-out;
-                color: $white-color;
-            }
-
-            .menu-bottom__svg {
-                transition: fill .3s ease-out;
-                fill: $white-color;
-            }
-
-            .menu-bottom__svg--etc {
-                stroke: $white-color;
-            }
-        }
-    }
-
-    // End of Dropdown list hover
-
-    .dropdown-list__link {
-        transition: color .3s ease-out, text-decoration .3s ease-out;
-
-        &:hover {
-            transition: color .3s ease-out, text-decoration .3s ease-out;
-            color: $accent-color;
-            text-decoration: underline;
-        }
-    }
-
-    .hero__link,
-    .sale-hits__btn {
-        transition: background-color, .3s ease-in-out;
-
-        &:hover {
-            transition: background-color, .3s ease-in-out;
-        }
-    }
-
-    .hero__link:hover {
-        background-color: $amber-color;
-    }
-
-    .sale-hits__svg {
-        transition: fill .3s ease;
-
-        &:hover {
-            transition: fill .3s ease;
-            fill: $red-color;
-        }
-    }
-
-    .sale-hits__btn:hover {
-        background-color: $primary-color;
     }
 }

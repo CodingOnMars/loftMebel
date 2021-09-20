@@ -10,11 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer type="module" src="js/index.js"></script>
+    <script defer type="module" src="js/pages/product-page.js"></script>
 </head>
 
 <body>
-
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
@@ -435,18 +434,199 @@
         </header>
 
         <main class="main">
-            <section class="hero">
-                <div class="container hero__container">
-                    <div class="hero__inner">
-                        <h1 class="hero__title title">
-                            Loft мебель
-                        </h1>
-                        <p class="hero__desc">
-                            Современная и удобная мебель
-                        </p>
-                        <a class="hero__link" href="#">Смотреть каталог</a>
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Гостинные</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Мягкая мебель</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Диваны</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="product">
+                <div class="container product__container">
+                    <div class="product__top">
+                        <div class="product__gallery gallery">
+                            <div class="gallery__main">
+                                <img class="gallery__cover" src="images/content/product-page/gallery-item_1.jpg"
+                                    alt="product-photo">
+                            </div>
+                            <div class="gallery__preview">
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_1.jpg"
+                                        alt="product-photo">
+                                </div>
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_2.jpg"
+                                        alt="product-photo">
+                                </div>
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_3.jpg "
+                                        alt="product-photo">
+                                </div>
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_4.jpg"
+                                        alt="product-photo">
+                                </div>
+                                <div class="gallery__img-container">
+                                    <img class="gallery__img" src="images/content/product-page/gallery-item_5.jpg"
+                                        alt="product-photo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__rating rating">
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                                <svg class="rating__svg">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#rating-icon"></use>
+                                </svg>
+                            </div>
+                            <h2 class="product__title">Динс Velvet Yellow</h2>
+                            <p class="product__category">Диваны</p>
+                            <div class="product__buy product-buy">
+                                <span class="product-buy__price">28 490₽</span>
+                                <button
+                                    class="product-buy__btn product-buy__btn--buy action-btn btn-reset">Купить</button>
+                                <button class="product-buy__btn product-buy__btn--wishlist btn-reset">
+                                    <svg class="product-buy__btn-svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                    <span class="product-buy__btn-text">Добавить в желаемое</span>
+                                </button>
+                            </div>
+                            <div class="product__options options">
+                                <div class="options__item">
+                                    <label class="options__title" for="options-select-color">Цвет</label>
+                                    <select class="options__select color-select" id="options-select-color">
+                                        <option class="color-select__option color-select__option--amber" value="amber">
+                                        </option>
+                                        <option class="color-select__option color-select__option--chateau-green"
+                                            value="chateau-green">
+                                        </option>
+                                        <option class="color-select__option color-select__option--cinnabar"
+                                            value="cinnabar">
+                                        </option>
+                                        <option class="color-select__option color-select__option--roman-coffee"
+                                            value="roman-coffee">
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="options__item">
+                                    <label class="options__title" for="options__input">Количество</label>
+                                    <input class="options__input" type="number" min="0" max="10" placeholder="0">
+                                </div>
+                                <div class="options__item">
+                                    <label for="options-select-sizes" class="options__title">Размер (Д × Ш × В)</label>
+                                    <select class="options__select options__select--size" id="options-select-sizes">
+                                        <option class="options__option" value="218 СМ × 95 СМ × 90 СМ"
+                                            selected="selected">
+                                            218 СМ × 95 СМ × 90 СМ</option>
+                                        <option class="options__option" value="218 СМ × 95 СМ × 90 СМ">
+                                            218 СМ × 95 СМ × 90 СМ</option>
+                                        <option class="options__option" value="218 СМ × 95 СМ × 90 СМ">
+                                            218 СМ × 95 СМ × 90 СМ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="product__description product-desc">
+                                <h4 class="product-desc__title">Описание</h4>
+                                <p class="product-desc__text">
+                                    Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это
+                                    диван
+                                    «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку.
+                                    Элегантность, комфорт и функциональность, собранные воедино – «Динс» просто создан
+                                    для
+                                    размеренного отдыха в кругу семьи или компании друзей!
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hero__circle"></div>
+                    <div class="product__bottom">
+                        <div class="product__tabs tabs">
+                            <button class="tabs__btn tabs__btn--active btn-reset">Характеристики</button>
+                            <button class="tabs__btn btn-reset">Отзывы</button>
+                            <button class="tabs__btn btn-reset">Доставка и оплата</button>
+                        </div>
+                        <div class="product__specs specs">
+                            <div class="specs__items">
+                                <span class="specs__name">Размер</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">218 × 95 × 90 (Дл. × Шир. × Выс.)</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Спальное место</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">195 × 144 × 44 (Дл. × Шир. × Выс.)</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Посадочное место</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">50 × 44 (Глуб. × Выс.)</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Каркас</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">массив, фанера, ДВП, пружинная змейка</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Материал ножек</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">массив</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Наполнение подушек</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">крошка ППУ, холлофайбер</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Зарядное устройство USB</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">нет</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Съемный чехол</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">нет</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Декоративные подушки</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">есть</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Вариант доставки</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">в разобранном виде</span>
+                            </div>
+                            <div class="specs__items">
+                                <span class="specs__name">Производитель</span>
+                                <span class="specs__divider"></span>
+                                <span class="specs__value">Россия</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -460,7 +640,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-1.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Валенсия Beige</h3>
@@ -492,7 +672,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-2.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Толикс-2 White Gloss</h3>
@@ -525,7 +705,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-3.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Динс Velvet Yellow</h3>
@@ -558,7 +738,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-4.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Кускен Navy Blue</h3>
@@ -590,7 +770,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-5.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Шерона Barhat Grey</h3>
@@ -622,7 +802,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-6.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Авиньон-1</h3>
@@ -654,7 +834,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-7.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Стелла Дуб Сонома</h3>
@@ -686,7 +866,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-8.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Равенна-1 Light</h3>
@@ -718,7 +898,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-9.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Бенфлит Grey</h3>
@@ -750,7 +930,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-10.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Тиффани Вудлайн
@@ -783,7 +963,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-11.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Валенсия Beige</h3>
@@ -815,7 +995,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-12.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Лайт-3-170-240 Белый</h3>
@@ -847,7 +1027,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-13.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Вилли Pink</h3>
@@ -879,7 +1059,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-14.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Сан-Паулу Velvet Brown</h3>
@@ -911,7 +1091,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-15.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Стеллаж Варди</h3>
@@ -943,7 +1123,7 @@
                                     <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                 </svg>
                             </button>
-                            <a class="sale-hits__link" href="product-page.html">
+                            <a class="sale-hits__link" href="#">
                                 <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-16.jpg"
                                     alt="Furniture item photo" width="200" height="150">
                                 <h3 class="sale-hits__title">Стеллаж модульный Ариана</h3>
@@ -1037,7 +1217,6 @@
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>
