@@ -187,6 +187,18 @@
         }
     }
 
+    // Product page
+    .product {
+        padding-bottom: 50px;
+    }
+
+    // Product gallery block
+    .gallery {
+        &__cover {
+            max-height: 250px;
+        }
+    }
+
     // Product page buy block
     .product-buy {
         &__btn-svg {
@@ -515,6 +527,21 @@
                 transition: opacity .5s ease-out;
                 opacity: 1;
             }
+        }
+    }
+
+    // Product page
+    .product {
+        padding-bottom: 90px;
+
+        &__top {
+            display: flex;
+            align-items: center;
+        }
+
+        &__gallery {
+            margin-right: 30px;
+            max-width: 620px;
         }
     }
 }
