@@ -1,0 +1,147 @@
+.catalog {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    &__filters {
+        // padding: 20px 15px;
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__categories {
+        padding-top: 63px;
+        padding-bottom: 28px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__price,
+    &__filter {
+        padding-bottom: 20px;
+    }
+
+    // Start of Color and brand filters
+    &__filter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__filter-item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__filter-label {
+        margin-left: 15px;
+    }
+
+    // End of Color and brand filters
+
+    &__buttons {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    &__btn {
+        font-weight: 500;
+        color: $accent-color;
+    }
+
+    &__products {
+        padding-top: 20px;
+    }
+}
+
+.category-filter {
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__select {
+        padding: 10px;
+        max-width: 290px;
+        min-height: 40px;
+        color: $dove-gray;
+        background-color: $burgerMenu-bg;
+        border-radius: 3px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.price-filter {
+
+    &__wrapper {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    &__input {
+        max-width: 120px;
+        min-height: 40px;
+        background-color: $burgerMenu-bg;
+        border: none;
+        border-radius: 3px;
+    }
+
+    &__divider {
+        margin: 20px 18px 0;
+        max-width: 15px;
+        flex-grow: 1;
+        border-top: 2px solid $primary-color;
+    }
+}
+
+// .color-filter {
+//     &__input {}
+// }
+
+// .brand-filter {}
+
+.filters-title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.sorting {
+    display: flex;
+    align-items: center;
+
+    &__filter-btn {
+        margin-right: 25px;
+        padding: 14px 48px;
+        background-color: $burgerMenu-bg;
+    }
+
+    &__span {
+        margin-right: 10px;
+    }
+
+    &__list {
+        display: none;
+        padding: 20px 0;
+        box-shadow: $secondary-shadow;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn {
+        padding: 10px;
+    }
+}
