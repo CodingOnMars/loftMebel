@@ -4,7 +4,7 @@
 
     &__filters {
         // padding: 20px 15px;
-        display: none;
+        // display: none;
 
         &--active {
             display: block;
@@ -35,9 +35,9 @@
         }
     }
 
-    &__filter-label {
-        margin-left: 15px;
-    }
+    // &__filter-label {
+    //     margin-left: 15px;
+    // }
 
     // End of Color and brand filters
 
@@ -99,11 +99,110 @@
     }
 }
 
-// .color-filter {
-//     &__input {}
-// }
+.custom-checkbox {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5rem;
 
-// .brand-filter {}
+    &__input {
+        display: grid;
+        grid-template-areas: "checkbox";
+
+        >* {
+            grid-area: checkbox;
+        }
+    }
+
+    &__input-native {
+        opacity: 0;
+        width: 1rem;
+        height: 1rem;
+
+        // Default background color
+        &:checked+.custom-checkbox__control {
+            background-color: $accent-color;
+        }
+
+        // Start of Custom backgrounds 
+        &:checked+.custom-checkbox__control--red {
+            background-color: $cinnabar;
+        }
+
+        &:checked+.custom-checkbox__control--green {
+            background-color: $chateau-green;
+        }
+
+        &:checked+.custom-checkbox__control--gray {
+            background-color: $mercury;
+        }
+
+        &:checked+.custom-checkbox__control--black {
+            background-color: $mine-shaft;
+        }
+
+        &:checked+.custom-checkbox__control--coffee {
+            background-color: $zambezi;
+        }
+
+        &:checked+.custom-checkbox__control--chocolate {
+            background-color: $roman-coffee;
+        }
+
+        // End of Custom backgrounds
+
+        &:checked+.custom-checkbox__control .custom-checkbox__svg {
+            transform: scale(1);
+        }
+
+        // Black color checkmark for bright background
+        &:checked+.custom-checkbox__control--gray .custom-checkbox__svg {
+            stroke: $primary-color;
+        }
+
+        &:focus+.custom-checkbox__control {
+            box-shadow: $checkbox-shadow;
+        }
+    }
+
+    &__control {
+        display: inline-grid;
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        border: 1px solid $accent-color;
+
+        &--red {
+            background-color: $cinnabar;
+        }
+
+        &--green {
+            background-color: $chateau-green;
+        }
+
+        &--gray {
+            background-color: $mercury;
+        }
+
+        &--black {
+            background-color: $mine-shaft;
+        }
+
+        &--coffee {
+            background-color: $zambezi;
+        }
+
+        &--chocolate {
+            background-color: $roman-coffee;
+        }
+    }
+
+    &__svg {
+        stroke: $white-color;
+        transition: transform 0.1s ease-in 25ms;
+        transform: scale(0);
+        transform-origin: bottom left;
+    }
+}
 
 .filters-title {
     margin-bottom: 20px;
@@ -126,7 +225,7 @@
     }
 
     &__list {
-        display: none;
+        // display: none;
         padding: 20px 0;
         box-shadow: $secondary-shadow;
 

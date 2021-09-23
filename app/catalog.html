@@ -488,54 +488,153 @@
 
                         <form class="catalog__filter color-filter">
                             <h3 class="color-filter__title filters-title">Цвет</h3>
-                            <div class="catalog__filter-item catalog__filter-item color-filter__item">
-                                <input class="color-filter__input" type="checkbox" id="color-1">
-                                <label for="color-1" class="catalog__filter-label color-filter__label">красный</label>
-                            </div>
-                            <div class="catalog__filter-item color-filter__item">
-                                <input class="color-filter__input" type="checkbox" id="color-2">
-                                <label for="color-2" class="catalog__filter-label color-filter__label">зеленый</label>
-                            </div>
-                            <div class="catalog__filter-item color-filter__item">
-                                <input class="color-filter__input" type="checkbox" id="color-3">
-                                <label for="color-3" class="catalog__filter-label color-filter__label">серый</label>
-                            </div>
-                            <div class="catalog__filter-item color-filter__item">
-                                <input class="color-filter__input" type="checkbox" id="color-4">
-                                <label for="color-4" class="catalog__filter-label color-filter__label">черный</label>
-                            </div>
-                            <div class="catalog__filter-item color-filter__item">
-                                <input class="color-filter__input" type="checkbox" id="color-5">
-                                <label for="color-5" class="catalog__filter-label color-filter__label">кофе</label>
-                            </div>
-                            <div class="catalog__filter-item color-filter__item">
-                                <input class="color-filter__input" type="checkbox" id="color-6">
-                                <label for="color-6" class="catalog__filter-label color-filter__label">шоколад</label>
-                            </div>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--red">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">красный</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--green">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">зеленый</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--gray">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">серый</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--black">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">черный</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--coffee">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">кофе</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--chocolate">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">шоколад</span>
+                            </label>
                         </form>
 
                         <form class="catalog__filter brand-filter">
                             <h3 class="brand-filter__title filters-title">Бренд</h3>
-                            <div class="catalog__filter-item brand-filter__item">
-                                <input class="brand-filter__input" type="checkbox" id="brand-1">
-                                <label for="brand-1" class="catalog__filter-label brand-filter__label">Динс</label>
-                            </div>
-                            <div class="catalog__filter-item brand-filter__item">
-                                <input class="brand-filter__input" type="checkbox" id="brand-2">
-                                <label for="brand-2" class="catalog__filter-label brand-filter__label">Кускен</label>
-                            </div>
-                            <div class="catalog__filter-item brand-filter__item">
-                                <input class="brand-filter__input" type="checkbox" id="brand-3">
-                                <label for="brand-3" class="catalog__filter-label brand-filter__label">Эби</label>
-                            </div>
-                            <div class="catalog__filter-item brand-filter__item">
-                                <input class="brand-filter__input" type="checkbox" id="brand-4">
-                                <label for="brand-4" class="catalog__filter-label brand-filter__label">Реджио</label>
-                            </div>
-                            <div class="catalog__filter-item brand-filter__item">
-                                <input class="brand-filter__input" type="checkbox" id="brand-5">
-                                <label for="brand-5" class="catalog__filter-label brand-filter__label">Сайле</label>
-                            </div>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Динс</span>
+                            </label>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Кускен</span>
+                            </label>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Эби</span>
+                            </label>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Реджио</span>
+                            </label>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Сайле</span>
+                            </label>
                         </form>
                         <button class="catalog__btn btn-reset">Показать еще</button>
                     </aside>
