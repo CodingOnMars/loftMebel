@@ -3,10 +3,18 @@ import get from '../modules/getElement.js';
 
 // Draft show/hide filter list
 const filterBtn = get('.sorting__filter-btn');
+const closeFilterBtn = get('.catalog-top__btn');
 const filters = get('.catalog__filters');
+const body = get('body');
 
 filterBtn.addEventListener('click', () => {
-	filters.classList.toggle('catalog__filters--active');
+	filters.classList.add('catalog__filters--active');
+	body.classList.add('lock');
+});
+
+closeFilterBtn.addEventListener('click', () => {
+	filters.classList.remove('catalog__filters--active');
+	body.classList.remove('lock');
 });
 
 // Draft Show/hide sort options

@@ -18,7 +18,7 @@
         <header class="header">
             <div class="container header__container">
                 <div class="header__inner">
-                    <button class="header__burger menu-burger">
+                    <button class="header__burger menu-burger" type="button">
                         <span class="menu-burger__line"></span>
                         <span class="menu-burger__line"></span>
                         <span class="menu-burger__line"></span>
@@ -457,7 +457,16 @@
             <section class="catalog">
                 <div class="container catalog__container">
                     <aside class="catalog__filters">
-                        <h2 class="catalog__filters-title">Фильтр</h2>
+                        <div class="catalog__top catalog-top">
+                            <p class="catalog-top__title">Фильтр</p>
+                            <button class="catalog-top__btn btn-reset" aria-label="Закрыть фильтр" type="button">
+                                <svg class="catalog-top__svg" width="20" height="20">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
+                                    </use>
+                                </svg>
+                            </button>
+                        </div>
+
                         <form class="catalog__categories category-filter">
                             <h3 class="category-filter__title filters-title">Раздел</h3>
                             <select class="category-filter__select" id="furniture-categories">
@@ -636,28 +645,29 @@
                                 <span class="custom-checkbox__label">Сайле</span>
                             </label>
                         </form>
-                        <button class="catalog__btn btn-reset">Показать еще</button>
+                        <button class="catalog__btn btn-reset" type="button">Показать еще</button>
                     </aside>
 
                     <div class="catalog__wrapper">
                         <div class="catalog__sorting sorting">
-                            <button class="sorting__filter-btn btn-reset">Фильтр</button>
+                            <button class="sorting__filter-btn btn-reset" type="button">Фильтр</button>
                             <div class="sorting__items">
-                                <button class="sorting__sort-btn btn-reset">
-                                    <span class="sorting__span">Сортировать</span>
+                                <button class="sorting__sort-btn btn-reset" type="button">
+                                    <span class="sorting__span-btn">Сортировать</span>
                                     <svg class="sorting__svg" width="19" height="11">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#sort-by-icon"></use>
                                     </svg>
                                 </button>
                                 <ul class="sorting__list">
                                     <li class="sorting__item">
-                                        <button class="sorting__btn btn-reset">по убыванию цены</button>
+                                        <button class="sorting__btn btn-reset" type="button">по убыванию цены</button>
                                     </li>
                                     <li class="sorting__item">
-                                        <button class="sorting__btn btn-reset">по возрастанию цены</button>
+                                        <button class="sorting__btn btn-reset" type="button">по возрастанию
+                                            цены</button>
                                     </li>
                                     <li class="sorting__item">
-                                        <button class="sorting__btn btn-reset">по популярности</button>
+                                        <button class="sorting__btn btn-reset" type="button">по популярности</button>
                                     </li>
                                 </ul>
                             </div>
@@ -665,7 +675,8 @@
 
                         <div class="catalog__products sale-hits">
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -694,10 +705,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -726,11 +739,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active sale-hits__item--discount">
                                 <span class="sale-hits__discount">-25%</span>
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -760,10 +775,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -792,10 +809,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -824,10 +843,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -856,10 +877,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -888,10 +911,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -920,10 +945,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -952,10 +979,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -985,10 +1014,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -1017,10 +1048,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -1049,10 +1082,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -1081,10 +1116,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -1113,10 +1150,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -1145,10 +1184,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                             <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
                                     <svg class="sale-hits__svg wishlist-icon">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
                                     </svg>
@@ -1177,7 +1218,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden">Добавить в корзину</button>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
                             </div>
                         </div>
                     </div>
