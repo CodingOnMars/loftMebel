@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loft mebel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer type="module" src="js/pages/catalog.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__inner">
+                    <button class="header__burger menu-burger" type="button">
+                        <span class="menu-burger__line"></span>
+                        <span class="menu-burger__line"></span>
+                        <span class="menu-burger__line"></span>
+                    </button>
+                    <a href="#" class="header__logo logo">
+                        <img class="logo__img" src="images/logo.svg" alt="Loft Мебель" width="112" height="25">
+                    </a>
+                    <nav class="header__nav menu">
+                        <button class="menu__btn btn-reset">
+                            <span class="menu__btn-line"></span>
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item--label">
+                                Меню
+                            </li>
+                            <li class="menu__item menu__item--active">
+                                <a href="#" class="menu__link menu__link--home menu__link--active">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--about">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--contacts">Контакты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--phone" href="tel:89648999119">8 (964) 89 99 119</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--delivery">Доставка</a>
+                            </li>
+                        </ul>
+                        <ul class="menu__list menu__list--tablet">
+                            <li class="menu__item menu__item--label">Категории</li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--kitchen">Кухни</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--bedroom">Спальни</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--livingroom">Гостинные</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--closet">Прихожие</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--office">Офисная мебель</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--childrensroom">Детская</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--sale">Акция</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--new">Новинки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--mattress">Матрасы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--armchair">Мягкая мебель</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--cupboard">Шкафы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="header__nav-left menu-left">
+                        <ul class="menu-left__list">
+                            <li class="menu-left__item">
+                                <a class="menu-left__link" href="#">Главная</a>
+                            </li>
+                            <li class="menu-left__item">
+                                <a class="menu-left__link" href="#">О нас</a>
+                            </li>
+                            <li class="menu-left__item">
+                                <a class="menu-left__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__search search">
+                        <form class="search__form">
+                            <input class="search__input" type="text" placeholder="Поиск">
+                        </form>
+                    </div>
+                    <nav class="header__nav-right menu-right">
+                        <ul class="menu-right__list">
+                            <li class="menu-right__item">
+                                <a class="menu-right__link menu-right__link--phone" href="tel:89648999119">8 (964) 89 99
+                                    119</a>
+                            </li>
+                            <li class="menu-right__item">
+                                <a class="menu-right__link menu-right__link--delivery" href="#">Доставка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__icons menu-icons">
+                        <ul class="menu-icons__list">
+                            <li class="menu-icons__item">
+                                <a href="#" class="menu-icons__link">
+                                    <svg class="menu-icons__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu-icons__item">
+                                <a href="#" class="menu-icons__link">
+                                    <svg class="menu-icons__svg cart-icon cart-icon--active">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#cart-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu-icons__item">
+                                <a href="#" class="menu-icons__link">
+                                    <svg class="menu-icons__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#profile-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__categories menu-categories">
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg menu-categories__svg--red">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#sale-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Акция</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg menu-categories__svg--yellow">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#new-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Новинки</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#kitchen-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Кухни</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#bedroom-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Спальни</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#livingroom-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Гостинные</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#closet-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Прихожие</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#office-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Офисная мебель</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#childrensroom-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Детская</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__bottom">
+                    <nav class="header__nav-bottom menu-bottom">
+                        <ul class="menu-bottom__list">
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#kitchen-icon"></use>
+                                    </svg>
+                                    Кухни
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Модульные кухни</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Барная зона</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кухонные уголки</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Обеденная зона</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Столешницы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Стеновые панели
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Мойки, сушилки,
+                                            смесители для кухни</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Дополнительная
+                                            фурнитура</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Бытовая техника</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#bedroom-icon"></use>
+                                    </svg>
+                                    Спальни
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Спальные гарнитуры</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кровати</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Шкафы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Тумбочки</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Комоды</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Стеновые панели
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Столики</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Зеркала</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#livingroom-icon"></use>
+                                    </svg>
+                                    Гостинные
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Гостинные гарнитуры</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Столы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Комоды</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кофейные столики</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Тумбы под телевизор</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#closet-icon"></use>
+                                    </svg>
+                                    Прихожие
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Модульные прихожие</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Тумбы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Шкафы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Зеркала</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Вешалки</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Пуфики
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#office-icon"></use>
+                                    </svg>
+                                    Офисная мебель
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Офисные гарнитуры</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кабинеты</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Компьютерные столы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Офисные стулья</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Офисные кресла</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Офисные диваны
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#childrensroom-icon"></use>
+                                    </svg>
+                                    Детская
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Детские гарнитуры</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кровати</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Шкафы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Столы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Стулья</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Комоды
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Стеллажи</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item menu-bottom__item--red">
+                                <a class="menu-bottom__link" href="#">Акция</a>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg menu-bottom__svg--etc">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#etc-icon"></use>
+                                    </svg>
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list dropdown-list--etc">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Новинки</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Шкафы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Матрасы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Мягкая мебель</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Гостинные</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Мягкая мебель</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Диваны</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="catalog">
+                <div class="container catalog__container">
+                    <aside class="catalog__filters">
+                        <div class="catalog__top catalog-top">
+                            <p class="catalog-top__title">Фильтр</p>
+                            <button class="catalog-top__btn btn-reset" aria-label="Закрыть фильтр" type="button">
+                                <svg class="catalog-top__svg" width="20" height="20">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
+                                    </use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <form class="catalog__categories category-filter">
+                            <h3 class="category-filter__title filters-title">Раздел</h3>
+                            <select class="category-filter__select" id="furniture-categories">
+                                <option class="category-filter__option" value="kitchen">Кухни</option>
+                                <option class="category-filter__option" value="bedroom">Спальни</option>
+                                <option class="category-filter__option" value="livingroom" selected>Гостинные</option>
+                                <option class="category-filter__option" value="closet">Прихожие</option>
+                                <option class="category-filter__option" value="office-furniture">Офисная мебель</option>
+                                <option class="category-filter__option" value="childrensroom">Детская</option>
+                            </select>
+                            <select class="category-filter__select" id="furniture-categories">
+                                <option class="category-filter__option" value="soft furniture">Мягкая мебель</option>
+                            </select>
+                            <select class="category-filter__select" id="furniture-categories">
+                                <option class="category-filter__option" value="sofas">Диваны</option>
+                            </select>
+                        </form>
+
+                        <form class="catalog__price price-filter">
+                            <h3 class="price-filter__title filters-title">Цена</h3>
+                            <input class="price-filter__range" type="range" min="0" max="210000">
+                            <div class="price-filter__wrapper">
+                                <input class="price-filter__input" type="text">
+                                <span class="price-filter__divider"></span>
+                                <input class="price-filter__input" type="text">
+                            </div>
+                        </form>
+
+                        <form class="catalog__filter color-filter">
+                            <h3 class="color-filter__title filters-title">Цвет</h3>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--red">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">красный</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--green">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">зеленый</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--gray">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">серый</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--black">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">черный</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--coffee">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">кофе</span>
+                            </label>
+                            <label class="catalog__filter-item color-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control custom-checkbox__control--chocolate">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">шоколад</span>
+                            </label>
+                        </form>
+
+                        <form class="catalog__filter brand-filter">
+                            <h3 class="brand-filter__title filters-title">Бренд</h3>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Динс</span>
+                            </label>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Кускен</span>
+                            </label>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Эби</span>
+                            </label>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Реджио</span>
+                            </label>
+                            <label class="catalog__filter-item brand-filter__item custom-checkbox">
+                                <span class="custom-checkbox__input">
+                                    <input class="custom-checkbox__input-native" type="checkbox" name="checkbox">
+                                    <span class="custom-checkbox__control">
+                                        <svg class="custom-checkbox__svg" width="18" height="16" aria-hidden="true"
+                                            focusable="false">
+                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#checkbox-checkmark">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <span class="custom-checkbox__label">Сайле</span>
+                            </label>
+                        </form>
+                        <button class="catalog__btn btn-reset" type="button">Показать еще</button>
+                    </aside>
+
+                    <div class="catalog__wrapper">
+                        <div class="catalog__sorting sorting">
+                            <button class="sorting__filter-btn btn-reset" type="button">Фильтр</button>
+                            <div class="sorting__items">
+                                <button class="sorting__sort-btn btn-reset" type="button">
+                                    <span class="sorting__span-btn">Сортировать</span>
+                                    <svg class="sorting__svg" width="19" height="11">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#sort-by-icon"></use>
+                                    </svg>
+                                </button>
+                                <ul class="sorting__list">
+                                    <li class="sorting__item">
+                                        <button class="sorting__btn btn-reset" type="button">по убыванию цены</button>
+                                    </li>
+                                    <li class="sorting__item">
+                                        <button class="sorting__btn btn-reset" type="button">по возрастанию
+                                            цены</button>
+                                    </li>
+                                    <li class="sorting__item">
+                                        <button class="sorting__btn btn-reset" type="button">по популярности</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="catalog__products">
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-1.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Валенсия Beige</h3>
+                                    <p class="sale-hits__text">Барные стулья</p>
+                                    <span class="sale-hits__span">2 300₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-2.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Толикс-2 White Gloss</h3>
+                                    <p class="sale-hits__text">Барные стулья</p>
+                                    <span class="sale-hits__span">4 690₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active sale-hits__item--discount">
+                                <span class="sale-hits__discount">-25%</span>
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-3.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Динс Velvet Yellow</h3>
+                                    <p class="sale-hits__text">Диваны</p>
+                                    <span class="sale-hits__span">28 490₽</span>
+                                    <span class="sale-hits__span sale-hits__span--line-through">37 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-4.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Кускен Navy Blue</h3>
+                                    <p class="sale-hits__text">Диваны</p>
+                                    <span class="sale-hits__span">22 300₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-5.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Шерона Barhat Grey</h3>
+                                    <p class="sale-hits__text">Двухспальные кровати</p>
+                                    <span class="sale-hits__span">21 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-6.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Авиньон-1</h3>
+                                    <p class="sale-hits__text">Буфеты</p>
+                                    <span class="sale-hits__span">18 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-7.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Стелла Дуб Сонома</h3>
+                                    <p class="sale-hits__text">Комоды</p>
+                                    <span class="sale-hits__span">8 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-8.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Равенна-1 Light</h3>
+                                    <p class="sale-hits__text">Комоды</p>
+                                    <span class="sale-hits__span">14 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-9.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Бенфлит Grey</h3>
+                                    <p class="sale-hits__text">Журнальные столы</p>
+                                    <span class="sale-hits__span">7 200₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-10.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Тиффани Вудлайн
+                                        Крем</h3>
+                                    <p class="sale-hits__text">Письменные столы</p>
+                                    <span class="sale-hits__span">10 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-11.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Валенсия Beige</h3>
+                                    <p class="sale-hits__text">Шкафы</p>
+                                    <span class="sale-hits__span">19 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-12.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Лайт-3-170-240 Белый</h3>
+                                    <p class="sale-hits__text">Шкафы</p>
+                                    <span class="sale-hits__span">27 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-13.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Вилли Pink</h3>
+                                    <p class="sale-hits__text">Детская мебель</p>
+                                    <span class="sale-hits__span">21 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-14.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Сан-Паулу Velvet Brown</h3>
+                                    <p class="sale-hits__text">Диваны</p>
+                                    <span class="sale-hits__span">18 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-15.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Стеллаж Варди</h3>
+                                    <p class="sale-hits__text">Стеллажи</p>
+                                    <span class="sale-hits__span">10 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                            <div class="sale-hits__item sale-hits__item--active">
+                                <button class="sale-hits__btn-close btn-reset" type="button"
+                                    aria-label="Добавить в желаемое">
+                                    <svg class="sale-hits__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </button>
+                                <a class="sale-hits__link" href="product-page.html">
+                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-16.jpg"
+                                        alt="Furniture item photo" width="200" height="150">
+                                    <h3 class="sale-hits__title">Стеллаж модульный Ариана</h3>
+                                    <p class="sale-hits__text">Стеллажи</p>
+                                    <span class="sale-hits__span">12 990₽</span>
+                                </a>
+                                <div class="sale-hits__sizes sizes hidden">
+                                    <p class="sizes__title">Размеры</p>
+                                    <div class="sizes__items">
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Ширина</span>
+                                            <span class="sizes__value">43 см</span>
+                                        </div>
+                                        <div class="sizes__item sizes__item--pseudo">
+                                            <span class="sizes__subtitle">Глубина</span>
+                                            <span class="sizes__value">50 см</span>
+                                        </div>
+                                        <div class="sizes__item">
+                                            <span class="sizes__subtitle">Высота</span>
+                                            <span class="sizes__value">120 см</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
+                                    корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <h2 class="footer__title">Навигация</h2>
+                <div class="footer__top">
+                    <nav class="footer__nav menu-footer">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Кухни</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Спальни</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Гостинные</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Прихожие</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Офисная мебель</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Детская</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Шкафы</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Матрасы</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Мягкая мебель</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__address">
+                        <a href="#" class="footer__logo">
+                            <img src="images/footer-logo.svg" alt="" class="footer__img">
+                        </a>
+                        <p class="footer__text">г. Анапа, Владимирская улица, 41
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__deals">
+                        <a class="footer__deals-link footer__deals-link--sale" href="#">Акция</a>
+                        <a class="footer__deals-link" href="#">Новинки</a>
+                    </div>
+                    <div class="footer__socials socials">
+                        <a class="socials__link socials__link--phone" href="tel:89648999119">8 (964) 89 99 119</a>
+                        <a class="socials__link socials__link--instagram" href="#">Instagram</a>
+                        <a class="socials__link socials__link--email"
+                            href="mailto:loft-mebel-anapa@lm.com">loft-mebel-anapa@lm.com</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

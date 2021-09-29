@@ -33,3 +33,11 @@ $roman-coffee: #864f4f;
 $primary-shadow: 4.0px 8.0px 8.0px rgba(0, 0, 0, 0.07);
 $secondary-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.10);
 $max-height-shadow: 8px 16px 16px rgba(0, 0, 0, 0.07);
+$checkbox-shadow: 0 0 0 0.05rem #fff,
+0 0 0.15rem 0.1rem #414141;
+
+// Z-index
+$zindex: (burgerMenu: 2,
+    overlay: 1,
+    minus: -1,
+)
