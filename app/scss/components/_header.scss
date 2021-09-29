@@ -81,7 +81,7 @@
     box-shadow: $primary-shadow;
     transition: .5s ease-out;
     overflow: auto;
-    z-index: 2;
+    z-index: map-get($zindex, burgerMenu);
 
     &.active {
         top: 0;
