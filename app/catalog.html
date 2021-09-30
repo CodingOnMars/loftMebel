@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/vendor/nouislider.min.js"></script>
     <script defer type="module" src="js/pages/catalog.js"></script>
 </head>
 
@@ -488,11 +489,19 @@
 
                         <form class="catalog__price price-filter">
                             <h3 class="price-filter__title filters-title">Цена</h3>
-                            <input class="price-filter__range" type="range" min="0" max="210000">
+                            <div class="price-filter__range" id="range-slider"></div>
                             <div class="price-filter__wrapper">
-                                <input class="price-filter__input" type="text">
+                                <label class="price-filter__label">
+                                    <input class="price-filter__input" type="number" min="500" max="210000"
+                                        placeholder="500" id="price-input-0">
+                                    <span class="price-filter__text">₽</span>
+                                </label>
                                 <span class="price-filter__divider"></span>
-                                <input class="price-filter__input" type="text">
+                                <label class="price-filter__label">
+                                    <input class="price-filter__input" type="number" min="500" max="210000"
+                                        placeholder="210000" id="price-input-1">
+                                    <span class="price-filter__text">₽</span>
+                                </label>
                             </div>
                         </form>
 
