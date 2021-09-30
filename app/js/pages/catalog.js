@@ -1,5 +1,6 @@
 import '../modules/burgerMenu.js';
 import get from '../modules/getElement.js';
+import '../modules/rangeSlider.js';
 
 // Draft show/hide filter list
 const filterBtn = get('.sorting__filter-btn');

@@ -19,5 +19,8 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-svg-sprite": "^1.5.0",
 		"gulp-uglify-es": "^3.0.0"
+	},
+	"dependencies": {
+		"nouislider": "^15.4.0"
 	}
 }

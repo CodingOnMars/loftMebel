@@ -68,6 +68,7 @@ function scripts() {
 		'app/js/index.js',
 		'app/js/pages/*.js',
 		'app/js/modules/*.js',
+		'app/js/vendor/*.js',
 	]).pipe(browserSync.stream());
 }
 
@@ -91,7 +92,10 @@ function build() {
 		[
 			'app/css/style.min.css',
 			'app/fonts/**/*',
-			'app/js/main.min.js',
+			// 'app/js/main.min.js',
+			'app/js/index.js',
+			'app/js/pages/*.js',
+			'app/js/modules/*.js',
 			'app/*.html',
 		],
 		{ base: 'app' }

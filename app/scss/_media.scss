@@ -273,12 +273,19 @@
         opacity: 0;
     }
 
-    .price-filter__input {
-        width: 90px;
-    }
+    .price-filter {
+        &__range {
+            // max-width: 200px;
+            width: calc(100% - 17px);
+        }
 
-    .price-filter__divider {
-        margin: 20px 5px 0;
+        &__input {
+            width: 80px;
+        }
+
+        &__divider {
+            margin: 20px 5px 0;
+        }
     }
 
     // End of Catalog
