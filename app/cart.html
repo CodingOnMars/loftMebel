@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loft mebel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer type="module" src="js/pages/cart.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__inner">
+                    <button class="header__burger menu-burger">
+                        <span class="menu-burger__line"></span>
+                        <span class="menu-burger__line"></span>
+                        <span class="menu-burger__line"></span>
+                    </button>
+                    <a href="index.html" class="header__logo logo">
+                        <img class="logo__img" src="images/logo.svg" alt="Loft Мебель" width="112" height="25">
+                    </a>
+                    <nav class="header__nav menu">
+                        <button class="menu__btn btn-reset">
+                            <span class="menu__btn-line"></span>
+                        </button>
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item--label">
+                                Меню
+                            </li>
+                            <li class="menu__item menu__item--active">
+                                <a href="index.html" class="menu__link menu__link--home menu__link--active">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--about">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--contacts">Контакты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--phone" href="tel:89648999119">8 (964) 89 99 119</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--delivery">Доставка</a>
+                            </li>
+                        </ul>
+                        <ul class="menu__list menu__list--tablet">
+                            <li class="menu__item menu__item--label">Категории</li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--kitchen">Кухни</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--bedroom">Спальни</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--livingroom">Гостинные</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--closet">Прихожие</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--office">Офисная мебель</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--childrensroom">Детская</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--sale">Акция</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--new">Новинки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--mattress">Матрасы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--armchair">Мягкая мебель</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__link--cupboard">Шкафы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="header__nav-left menu-left">
+                        <ul class="menu-left__list">
+                            <li class="menu-left__item">
+                                <a class="menu-left__link" href="#">Главная</a>
+                            </li>
+                            <li class="menu-left__item">
+                                <a class="menu-left__link" href="#">О нас</a>
+                            </li>
+                            <li class="menu-left__item">
+                                <a class="menu-left__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__search search">
+                        <form class="search__form">
+                            <input class="search__input" type="text" placeholder="Поиск">
+                        </form>
+                    </div>
+                    <nav class="header__nav-right menu-right">
+                        <ul class="menu-right__list">
+                            <li class="menu-right__item">
+                                <a class="menu-right__link menu-right__link--phone" href="tel:89648999119">8 (964) 89 99
+                                    119</a>
+                            </li>
+                            <li class="menu-right__item">
+                                <a class="menu-right__link menu-right__link--delivery" href="#">Доставка</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__icons menu-icons">
+                        <ul class="menu-icons__list">
+                            <li class="menu-icons__item">
+                                <a href="#" class="menu-icons__link">
+                                    <svg class="menu-icons__svg wishlist-icon">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu-icons__item">
+                                <a href="#" class="menu-icons__link">
+                                    <svg class="menu-icons__svg cart-icon cart-icon--active">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#cart-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu-icons__item">
+                                <a href="#" class="menu-icons__link">
+                                    <svg class="menu-icons__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#profile-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__categories menu-categories">
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg menu-categories__svg--red">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#sale-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Акция</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg menu-categories__svg--yellow">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#new-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Новинки</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#kitchen-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Кухни</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#bedroom-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Спальни</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#livingroom-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Гостинные</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#closet-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Прихожие</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#office-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Офисная мебель</span>
+                        </a>
+                    </div>
+                    <div class="menu-categories__item">
+                        <a class="menu-categories__link" href="#">
+                            <svg class="menu-categories__svg">
+                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#childrensroom-icon"></use>
+                            </svg>
+                            <span class="menu-categories__span">Детская</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__bottom">
+                    <nav class="header__nav-bottom menu-bottom">
+                        <ul class="menu-bottom__list">
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#kitchen-icon"></use>
+                                    </svg>
+                                    Кухни
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Модульные кухни</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Барная зона</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кухонные уголки</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Обеденная зона</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Столешницы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Стеновые панели
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Мойки, сушилки,
+                                            смесители для кухни</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Дополнительная
+                                            фурнитура</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Бытовая техника</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#bedroom-icon"></use>
+                                    </svg>
+                                    Спальни
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Спальные гарнитуры</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кровати</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Шкафы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Тумбочки</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Комоды</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Стеновые панели
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Столики</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Зеркала</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#livingroom-icon"></use>
+                                    </svg>
+                                    Гостинные
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Гостинные гарнитуры</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Столы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Комоды</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кофейные столики</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Тумбы под телевизор</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#closet-icon"></use>
+                                    </svg>
+                                    Прихожие
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Модульные прихожие</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Тумбы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Шкафы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Зеркала</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Вешалки</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Пуфики
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#office-icon"></use>
+                                    </svg>
+                                    Офисная мебель
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Офисные гарнитуры</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кабинеты</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Компьютерные столы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Офисные стулья</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Офисные кресла</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Офисные диваны
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#childrensroom-icon"></use>
+                                    </svg>
+                                    Детская
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Детские гарнитуры</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Кровати</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Шкафы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Столы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Стулья</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Комоды
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Стеллажи</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-bottom__item menu-bottom__item--red">
+                                <a class="menu-bottom__link" href="#">Акция</a>
+                            </li>
+                            <li class="menu-bottom__item">
+                                <a class="menu-bottom__link" href="#">
+                                    <svg class="menu-bottom__svg menu-bottom__svg--etc">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#etc-icon"></use>
+                                    </svg>
+                                </a>
+                                <ul class="menu-bottom__list-dropdown dropdown-list dropdown-list--etc">
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Новинки</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Шкафы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Матрасы</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a class="dropdown-list__link" href="#">Мягкая мебель</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <h2 class="footer__title">Навигация</h2>
+                <div class="footer__top">
+                    <nav class="footer__nav menu-footer">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Кухни</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Спальни</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Гостинные</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Прихожие</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Офисная мебель</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Детская</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Шкафы</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Матрасы</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a class="menu-footer__link" href="#">Мягкая мебель</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__address">
+                        <a href="#" class="footer__logo">
+                            <img src="images/footer-logo.svg" alt="" class="footer__img">
+                        </a>
+                        <p class="footer__text">г. Анапа, Владимирская улица, 41
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__deals">
+                        <a class="footer__deals-link footer__deals-link--sale" href="#">Акция</a>
+                        <a class="footer__deals-link" href="#">Новинки</a>
+                    </div>
+                    <div class="footer__socials socials">
+                        <a class="socials__link socials__link--phone" href="tel:89648999119">8 (964) 89 99 119</a>
+                        <a class="socials__link socials__link--instagram" href="#">Instagram</a>
+                        <a class="socials__link socials__link--email"
+                            href="mailto:loft-mebel-anapa@lm.com">loft-mebel-anapa@lm.com</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

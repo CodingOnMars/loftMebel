@@ -2,7 +2,7 @@ import '../modules/burgerMenu.js';
 import get from '../modules/getElement.js';
 import '../modules/rangeSlider.js';
 
-// Draft show/hide filter list
+// Show/hide filter list
 const filterBtn = get('.sorting__filter-btn');
 const closeFilterBtn = get('.catalog-top__btn');
 const filters = get('.catalog__filters');
@@ -18,7 +18,7 @@ closeFilterBtn.addEventListener('click', () => {
 	body.classList.remove('lock');
 });
 
-// Draft Show/hide sort options
+// Show/hide sort options
 const sortBtn = get('.sorting__sort-btn');
 const sortList = get('.sorting__list');
 
