@@ -25,6 +25,11 @@ body.lock {
     padding: 0 15px;
 }
 
+.discount-svg {
+    fill: none;
+    stroke: $red-color;
+}
+
 .main {
     flex: 1 0 auto;
 }
