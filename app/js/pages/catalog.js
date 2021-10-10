@@ -1,22 +1,26 @@
-import '../modules/burgerMenu.js';
+import displayMobileMenu from '../modules/burgerMenu.js';
 import get from '../modules/getElement.js';
+import { lockBody } from '../modules/lockBody.js';
 import '../modules/rangeSlider.js';
+
+displayMobileMenu();
 
 // Show/hide filter list
 const filterBtn = get('.sorting__filter-btn');
 const closeFilterBtn = get('.catalog-top__btn');
 const filters = get('.catalog__filters');
-const body = get('body');
 
-filterBtn.addEventListener('click', () => {
-	filters.classList.add('catalog__filters--active');
-	body.classList.add('lock');
-});
+const toggleFilter = () => {
+	filters.classList.toggle('catalog__filters--active');
+	lockBody();
+};
 
-closeFilterBtn.addEventListener('click', () => {
-	filters.classList.remove('catalog__filters--active');
-	body.classList.remove('lock');
-});
+const displayFilterMenu = () => {
+	filterBtn.addEventListener('click', toggleFilter);
+	closeFilterBtn.addEventListener('click', toggleFilter);
+};
+
+displayFilterMenu();
 
 // Show/hide sort options
 const sortBtn = get('.sorting__sort-btn');
