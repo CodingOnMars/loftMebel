@@ -96,6 +96,7 @@ function build() {
 			'app/js/index.js',
 			'app/js/pages/*.js',
 			'app/js/modules/*.js',
+			'app/js/vendor/*.js',
 			'app/*.html',
 		],
 		{ base: 'app' }
