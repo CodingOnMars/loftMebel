@@ -91,7 +91,7 @@
                     <nav class="header__nav-left menu-left">
                         <ul class="menu-left__list">
                             <li class="menu-left__item">
-                                <a class="menu-left__link" href="#">Главная</a>
+                                <a class="menu-left__link" href="index.html">Главная</a>
                             </li>
                             <li class="menu-left__item">
                                 <a class="menu-left__link" href="#">О нас</a>
@@ -127,9 +127,9 @@
                                 </a>
                             </li>
                             <li class="menu-icons__item">
-                                <a href="#" class="menu-icons__link">
+                                <a href="cart.html" class="menu-icons__link">
                                     <svg class="menu-icons__svg cart-icon cart-icon--active">
-                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#cart-icon"></use>
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#cart-icon_active"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -464,36 +464,167 @@
                                     <img class="cart-item__img" src="images/content/bestsellers/bestellers-3.jpg"
                                         alt="Товар, добавленный в корзину" width="100" height="75">
                                 </div>
-                                <div class="cart-item__top">
-                                    <p class="cart-item__name">Динс Velvet Yellow</p>
-                                    <div class="cart-item__price cart-discount">
-                                        <svg class="cart-discount__svg discount-svg" width="20" height="20">
-                                            <use xlink:href="images/symbol/svg/sprite.symbol.svg#sale-icon"></use>
-                                        </svg>
-                                        <p class="cart-discount__value">-25%</p>
-                                        <p class="cart-discount__old-price">37 990₽</p>
-                                        <p class="cart-discount__price cart-item__current-price">28 490₽</p>
-                                    </div>
-                                </div>
-                                <div class="cart-item__bottom">
-                                    <div class="cart-item__options">
-                                        <span class="cart-item__name">Цвет:</span>
-                                        <span class="cart-item__value">Желтый</span>
-                                        <span class="cart-item__color"></span>
-                                    </div>
-                                    <div class="cart-item__options">
-                                        <span class="cart-item__name">Количество:</span>
-                                        <div class="cart-item__amount">
-                                            <button class="cart-item__amount-btn btn-reset">
-                                                −
-                                            </button>
-                                            <span class="cart-item__value cart-item__value--amount">1</span>
-                                            <button class="cart-item__amount-btn btn-reset">+</button>
+                                <div class="cart-item__inner">
+                                    <div class="cart-item__top">
+                                        <p class="cart-item__name">Динс Velvet Yellow</p>
+                                        <div class="cart-item__price cart-discount">
+                                            <svg class="cart-discount__svg discount-svg" width="20" height="20">
+                                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#sale-icon"></use>
+                                            </svg>
+                                            <p class="cart-discount__value">-25%</p>
+                                            <p class="cart-discount__old-price">37 990₽</p>
+                                            <p class="cart-discount__price cart-item__current-price">28 490₽</p>
                                         </div>
                                     </div>
-                                    <div class="cart-item__options">
-                                        <span class="cart-item__name">Размер(Ш×Д×В):</span>
-                                        <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
+                                    <div class="cart-item__bottom">
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Цвет:</span>
+                                            <span class="cart-item__value">Желтый</span>
+                                            <span class="cart-item__color cart-item__color--yellow"></span>
+                                        </div>
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Количество:</span>
+                                            <div class="cart-item__amount">
+                                                <button class="cart-item__amount-btn btn-reset">
+                                                    −
+                                                </button>
+                                                <span class="cart-item__value cart-item__value--amount">1</span>
+                                                <button class="cart-item__amount-btn btn-reset">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Размер(Ш×Д×В):</span>
+                                            <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="cart-item__btn btn-reset" type="button">
+                                <svg class="cart-item__svg" width="12" height="12">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
+                                    </use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart__item cart-item">
+                            <div class="cart-item__container">
+                                <div class="cart-item__picture">
+                                    <img class="cart-item__img" src="images/content/bestsellers/bestellers-7.jpg"
+                                        alt="Товар, добавленный в корзину" width="100" height="75">
+                                </div>
+                                <div class="cart-item__inner">
+                                    <div class="cart-item__top">
+                                        <p class="cart-item__name">Стелла Дуб Сонома</p>
+                                        <div class="cart-item__price">
+                                            <p class="cart-discount__price cart-item__current-price">8 990₽</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item__bottom">
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Цвет:</span>
+                                            <span class="cart-item__value">Бежевый</span>
+                                            <span class="cart-item__color cart-item__color--beige"></span>
+                                        </div>
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Количество:</span>
+                                            <div class="cart-item__amount">
+                                                <button class="cart-item__amount-btn btn-reset">
+                                                    −
+                                                </button>
+                                                <span class="cart-item__value cart-item__value--amount">1</span>
+                                                <button class="cart-item__amount-btn btn-reset">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Размер(Ш×Д×В):</span>
+                                            <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="cart-item__btn btn-reset" type="button">
+                                <svg class="cart-item__svg" width="12" height="12">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
+                                    </use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart__item cart-item">
+                            <div class="cart-item__container">
+                                <div class="cart-item__picture">
+                                    <img class="cart-item__img" src="images/content/bestsellers/bestellers-13.jpg"
+                                        alt="Товар, добавленный в корзину" width="100" height="75">
+                                </div>
+                                <div class="cart-item__inner">
+                                    <div class="cart-item__top">
+                                        <p class="cart-item__name">Вилли Pink</p>
+                                        <div class="cart-item__price">
+                                            <p class="cart-discount__price cart-item__current-price">21 990₽</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item__bottom">
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Цвет:</span>
+                                            <span class="cart-item__value">Розовый</span>
+                                            <span class="cart-item__color cart-item__color--pink"></span>
+                                        </div>
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Количество:</span>
+                                            <div class="cart-item__amount">
+                                                <button class="cart-item__amount-btn btn-reset">
+                                                    −
+                                                </button>
+                                                <span class="cart-item__value cart-item__value--amount">1</span>
+                                                <button class="cart-item__amount-btn btn-reset">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Размер(Ш×Д×В):</span>
+                                            <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="cart-item__btn btn-reset" type="button">
+                                <svg class="cart-item__svg" width="12" height="12">
+                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
+                                    </use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart__item cart-item">
+                            <div class="cart-item__container">
+                                <div class="cart-item__picture">
+                                    <img class="cart-item__img" src="images/content/bestsellers/bestellers-5.jpg"
+                                        alt="Товар, добавленный в корзину" width="100" height="75">
+                                </div>
+                                <div class="cart-item__inner">
+                                    <div class="cart-item__top">
+                                        <p class="cart-item__name">Шерона Barhat Grey</p>
+                                        <div class="cart-item__price">
+                                            <p class="cart-discount__price cart-item__current-price">21 990₽</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item__bottom">
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Цвет:</span>
+                                            <span class="cart-item__value">Темно-серый</span>
+                                            <span class="cart-item__color cart-item__color--gray"></span>
+                                        </div>
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Количество:</span>
+                                            <div class="cart-item__amount">
+                                                <button class="cart-item__amount-btn btn-reset">
+                                                    −
+                                                </button>
+                                                <span class="cart-item__value cart-item__value--amount">1</span>
+                                                <button class="cart-item__amount-btn btn-reset">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item__options">
+                                            <span class="cart-item__name">Размер(Ш×Д×В):</span>
+                                            <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -508,7 +639,7 @@
                     <div class="cart__checkout cart-checkout">
                         <div class="cart-checkout__price">
                             <span class="cart-checkout__name">Итоговая стоимость:</span>
-                            <span class="cart-checkout__value">69 960₽</span>
+                            <span class="cart-checkout__value">81 460₽</span>
                         </div>
                         <button class="cart-checkout__btn btn-reset action-btn" type="submit">Оформить заказ</button>
                     </div>
