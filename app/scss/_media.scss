@@ -348,6 +348,22 @@
 
     // End of Catalog
 
+    // Start of Account
+    .cashback {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            margin-bottom: 0;
+        }
+    }
+
+    // End of Account
+
     .footer {
         padding-top: 30px;
         padding-bottom: 42px;
@@ -455,6 +471,51 @@
     }
 
     // End of Shopping cart
+
+    // Start of Account
+    .personal-account {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .cashback {
+        &__list {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: $burgerMenu-bg;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .orders-table {
+        max-width: 500px;
+
+        &__title {
+            display: block;
+        }
+
+        &__row {
+            display: grid;
+            grid-template-columns:
+                minmax(100px, 300px) minmax(60px, 90px) minmax(60px, 100px) minmax(60px, 120px);
+            align-items: center;
+        }
+
+        &__subtitle {
+            display: none;
+        }
+    }
+
+    // End of Account
 }
 
 @media (min-width: 1140px) {
@@ -685,6 +746,16 @@
             margin-right: 30px;
             max-width: 620px;
         }
+    }
+
+    // Account
+    .personal-account {
+        padding-top: 40px;
+        padding-bottom: 170px;
+    }
+
+    .orders-table {
+        max-width: 600px;
     }
 
     .footer {
