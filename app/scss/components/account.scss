@@ -1,0 +1,173 @@
+.personal-account {
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    &__cashback,
+    &__personal-data {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 120%;
+    }
+}
+
+.cashback {
+    &__wrapper {
+        margin-bottom: 30px;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__status {
+        margin-right: 20px;
+    }
+
+    &__status-amount {
+        font-weight: 500;
+        color: $accent-color;
+    }
+
+    &__link {
+        color: $accent-color;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__svg {
+        margin-right: 15px;
+    }
+}
+
+.personal-data {
+    max-width: 450px;
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__label {
+        margin-bottom: 5px;
+        color: $dove-gray;
+    }
+
+    &__input {
+        padding: 12px 8px;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 1;
+        width: 150px;
+        height: 38px;
+        border: 2px solid $circle-first;
+        background-color: $burgerMenu-bg;
+
+        &--full-width {
+            width: 100%;
+        }
+
+        &--half-width {
+            width: 70px;
+        }
+    }
+
+    &__input[disabled] {
+        border: none;
+        cursor: not-allowed;
+        box-shadow: $input-shadow;
+    }
+
+    &__input:focus {
+        border-color: $accent-color;
+        outline: 3px solid transparent;
+    }
+
+    &__btn {
+        display: block;
+        margin-left: auto;
+        width: 101px;
+        height: 40px;
+    }
+}
+
+.orders {
+    &__link {
+        display: block;
+        margin-top: 20px;
+        text-align: right;
+        color: $accent-color;
+    }
+}
+
+.orders-table {
+
+    &__row {
+        padding: 10px;
+        border: 1px solid $mercury;
+        box-shadow: $secondary-shadow;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &--hide {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        margin-right: 15px;
+    }
+
+    &__value {
+
+        margin-top: 5px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &--green {
+            color: $chateau-green
+        }
+
+        &--red {
+            color: $tapestry;
+        }
+    }
+
+    &__subtitle {
+        display: inline-block;
+        margin-right: 2px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: $dove-gray;
+    }
+}

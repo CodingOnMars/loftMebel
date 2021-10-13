@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer type="module" src="js/pages/account.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
                         <span class="menu-burger__line"></span>
                         <span class="menu-burger__line"></span>
                     </button>
-                    <a href="#" class="header__logo logo">
+                    <a href="index.html" class="header__logo logo">
                         <img class="logo__img" src="images/logo.svg" alt="Loft Мебель" width="112" height="25">
                     </a>
                     <nav class="header__nav menu">
@@ -35,7 +36,7 @@
                                 Меню
                             </li>
                             <li class="menu__item menu__item--active">
-                                <a href="#" class="menu__link menu__link--home menu__link--active">Главная</a>
+                                <a href="index.html" class="menu__link menu__link--home menu__link--active">Главная</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link menu__link--about">О нас</a>
@@ -126,7 +127,7 @@
                                 </a>
                             </li>
                             <li class="menu-icons__item">
-                                <a href="#" class="menu-icons__link">
+                                <a href="cart.html" class="menu-icons__link">
                                     <svg class="menu-icons__svg cart-icon cart-icon--active">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#cart-icon"></use>
                                     </svg>
@@ -451,12 +452,16 @@
             <section class="personal-account">
                 <div class="container">
                     <article class="personal-account__cashback cashback">
-                        <h2 class="cashback__title">Бонусная программа</h2>
-                        <p class="cashback__status">У вас
-                            <span class="cashback__status-amount">0</span>
-                            бонусных баллов
-                        </p>
-                        <a class="cashback__link" href="#">Правила бонусной программы</a>
+                        <div class="cashback__wrapper">
+                            <h2 class="personal-account__title cashback__title">Бонусная программа</h2>
+                            <div class="cashback__info">
+                                <p class="cashback__status">У вас
+                                    <span class="cashback__status-amount">0</span>
+                                    бонусных баллов
+                                </p>
+                                <a class="cashback__link" href="#">Правила бонусной программы</a>
+                            </div>
+                        </div>
                         <ul class="cashback__list">
                             <li class="cashback__item">
                                 <svg class="cashback__svg" width="25" height="25">
@@ -475,28 +480,32 @@
                                 Оплачивайте бонусами до 20% от покупки</li>
                         </ul>
                     </article>
-                    <article class="personal-account__data personal-data">
-                        <h2 class="personal-data__title">Личные данные</h2>
-                        <div class="personal-data__items">
-                            <div class="personal-data__item">
-                                <label class="personal-data__label" for="name">Имя</label>
-                                <input class="personal-data__input" id="name" name="name" type="text" value="Иван"
-                                    disabled>
+                    <div class="personal-account__wrapper">
+                        <article class="personal-account__personal-data personal-data">
+                            <h2 class="personal-account__title personal-data__title">Личные данные</h2>
+                            <div class="personal-data__items">
+                                <div class="personal-data__item">
+                                    <label class="personal-data__label" for="name">Имя</label>
+                                    <input class="personal-data__input" id="name" name="name" type="text" value="Иван"
+                                        disabled>
+                                </div>
+                                <div class="personal-data__item">
+                                    <label class="personal-data__label" for="surname">Фамилия</label>
+                                    <input class="personal-data__input" id="surname" name="surname" type="text"
+                                        value="Иванов" disabled>
+                                </div>
                             </div>
-                            <div class="personal-data__item">
-                                <label class="personal-data__label" for="surname">Фамилия</label>
-                                <input class="personal-data__input" id="surname" name="surname" type="text"
-                                    value="Иванов" disabled>
-                            </div>
-                            <div class="personal-data__item">
-                                <label class="personal-data__label" for="email">E-mail</label>
-                                <input class="personal-data__input" id="email" name="email" type="email"
-                                    value="ivan@email.com" disabled>
-                            </div>
-                            <div class="personal-data__item">
-                                <label class="personal-data__label" for="phone">E-mail</label>
-                                <input class="personal-data__input" id="phone" name="phone" type="tel"
-                                    value="+7(901)123-45-67" disabled>
+                            <div class="personal-data__items">
+                                <div class="personal-data__item">
+                                    <label class="personal-data__label" for="email">E-mail</label>
+                                    <input class="personal-data__input" id="email" name="email" type="email"
+                                        value="ivan@email.com" disabled>
+                                </div>
+                                <div class="personal-data__item">
+                                    <label class="personal-data__label" for="phone">Номер телефона</label>
+                                    <input class="personal-data__input" id="phone" name="phone" type="tel"
+                                        value="+7(901)123-45-67" disabled>
+                                </div>
                             </div>
                             <div class="personal-data__item">
                                 <label class="personal-data__label" for="city">Город</label>
@@ -505,65 +514,63 @@
                             </div>
                             <div class="personal-data__item">
                                 <label class="personal-data__label" for="street">Улица</label>
-                                <input class="personal-data__input" id="street" name="street" type="text" value="Ленина"
-                                    disabled>
+                                <input class="personal-data__input personal-data__input--full-width" id="street"
+                                    name="street" type="text" value="Ленина" disabled>
                             </div>
-                            <div class="personal-data__item">
-                                <label class="personal-data__label" for="house-number">Дом/Корпус</label>
-                                <input class="personal-data__input" id="house-number" name="house-number" type="number"
-                                    value="90" disabled>
-                            </div>
-                            <div class="personal-data__item">
-                                <label class="personal-data__label" for="room">Квартира</label>
-                                <input class="personal-data__input" id="room" name="room" type="number" value="71"
-                                    disabled>
-                            </div>
-                        </div>
-                        <button class="personal-data__btn btn-reset">Изменить</button>
-                    </article>
-                    <article class="personal-account__orders orders">
-                        <h2 class="orders__title">Мои заказы</h2>
-                        <div class="orders__table orders-table">
-                            <div class="orders-table__top">
-                                <p class="orders-table__title">Товар</p>
-                                <p class="orders-table__title">Цена</p>
-                                <p class="orders-table__title">Дата</p>
-                                <p class="orders-table__title">Статус</p>
-                            </div>
-                            <div class="orders-table__row">
-                                <div class="orders-table__item">
-                                    <img class="orders-table__img" src="images/content/bestsellers/bestellers-4.jpg"
-                                        alt="Фотография заказа">
-                                    <span class="orders-table__name">Кускен Navy Blue</span>
+                            <div class="personal-data__items">
+                                <div class="personal-data__item">
+                                    <label class="personal-data__label" for="house-number">Дом/Корпус</label>
+                                    <input class="personal-data__input personal-data__input--half-width"
+                                        id="house-number" name="house-number" type="number" value="90" disabled>
                                 </div>
-                                <div class="orders-table__item">
-                                    <p class="orders-table__value">
+                                <div class="personal-data__item">
+                                    <label class="personal-data__label" for="room">Квартира</label>
+                                    <input class="personal-data__input personal-data__input--half-width" id="room"
+                                        name="room" type="number" value="71" disabled>
+                                </div>
+                            </div>
+                            <button class="personal-data__btn btn-reset action-btn">Изменить</button>
+                        </article>
+                        <article class="personal-account__orders orders">
+                            <h2 class="personal-account__title orders__title">Мои заказы</h2>
+                            <div class="orders__table orders-table">
+                                <div class="orders-table__row orders-table__row--hide">
+                                    <div class="orders-table__title">Товар</div>
+                                    <div class="orders-table__title">Цена</div>
+                                    <div class="orders-table__title">Дата</div>
+                                    <div class="orders-table__title">Статус</div>
+                                </div>
+                                <div class="orders-table__row">
+                                    <div class="orders-table__item">
+                                        <img class="orders-table__img" src="images/content/bestsellers/bestellers-4.jpg"
+                                            alt="Фотография заказа" width="50" height="40">
+                                        <span class="orders-table__name">Кускен Navy Blue</span>
+                                    </div>
+                                    <div class="orders-table__value">
                                         <span class="orders-table__subtitle">
                                             Цена:
                                         </span>
                                         16990
-                                    </p>
-                                    <p class="orders-table__value">
+                                    </div>
+                                    <div class="orders-table__value">
                                         <span class="orders-table__subtitle">
                                             Дата:
                                         </span>
                                         20.10.2021
-                                    </p>
-                                    <p class="orders-table__value">
+                                    </div>
+                                    <div class="orders-table__value">
                                         <span class="orders-table__subtitle">
                                             Статус:
                                         </span>
-                                        Ожидается
-                                    </p>
+                                        Ожидается доставка
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="orders-table__row">
-                                <div class="orders-table__item">
-                                    <img class="orders-table__img" src="images/content/bestsellers/bestellers-7.jpg"
-                                        alt="Фотография заказа">
-                                    <span class="orders-table__name">Стелла Дуб Сонома</span>
-                                </div>
-                                <div class="orders-table__item">
+                                <div class="orders-table__row">
+                                    <div class="orders-table__item">
+                                        <img class="orders-table__img" src="images/content/bestsellers/bestellers-7.jpg"
+                                            alt="Фотография заказа" width="50" height="40">
+                                        <span class="orders-table__name">Стелла Дуб Сонома</span>
+                                    </div>
                                     <p class="orders-table__value">
                                         <span class="orders-table__subtitle">
                                             Цена:
@@ -583,14 +590,13 @@
                                         Оплачено 50%
                                     </p>
                                 </div>
-                            </div>
-                            <div class="orders-table__row">
-                                <div class="orders-table__item">
-                                    <img class="orders-table__img" src="images/content/bestsellers/bestellers-13.jpg"
-                                        alt="Фотография заказа">
-                                    <span class="orders-table__name">Вилли Pink</span>
-                                </div>
-                                <div class="orders-table__item">
+                                <div class="orders-table__row">
+                                    <div class="orders-table__item">
+                                        <img class="orders-table__img"
+                                            src="images/content/bestsellers/bestellers-13.jpg" alt="Фотография заказа"
+                                            width="50" height="40">
+                                        <span class="orders-table__name">Вилли Pink</span>
+                                    </div>
                                     <p class="orders-table__value">
                                         <span class="orders-table__subtitle">
                                             Цена:
@@ -603,21 +609,19 @@
                                         </span>
                                         07.06.2021
                                     </p>
-                                    <p class="orders-table__value">
+                                    <p class="orders-table__value orders-table__value--green">
                                         <span class="orders-table__subtitle">
                                             Статус:
                                         </span>
                                         Доставлено
                                     </p>
                                 </div>
-                            </div>
-                            <div class="orders-table__row">
-                                <div class="orders-table__item">
-                                    <img class="orders-table__img" src="images/content/bestsellers/bestellers-5.jpg"
-                                        alt="Фотография заказа">
-                                    <span class="orders-table__name">Шерона Barhat Grey</span>
-                                </div>
-                                <div class="orders-table__item">
+                                <div class="orders-table__row">
+                                    <div class="orders-table__item">
+                                        <img class="orders-table__img" src="images/content/bestsellers/bestellers-5.jpg"
+                                            alt="Фотография заказа" width="50" height="40">
+                                        <span class="orders-table__name">Шерона Barhat Grey</span>
+                                    </div>
                                     <p class="orders-table__value">
                                         <span class="orders-table__subtitle">
                                             Цена:
@@ -630,7 +634,7 @@
                                         </span>
                                         02.06.2021
                                     </p>
-                                    <p class="orders-table__value">
+                                    <p class="orders-table__value orders-table__value--red">
                                         <span class="orders-table__subtitle">
                                             Статус:
                                         </span>
@@ -638,8 +642,9 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                    </article>
+                            <a class="orders__link" href="#">Смотреть все</a>
+                        </article>
+                    </div>
                 </div>
             </section>
 
