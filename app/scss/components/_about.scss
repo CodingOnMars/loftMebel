@@ -1,0 +1,206 @@
+.about {
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    &__hero {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    &__benefits {
+        margin-bottom: 40px;
+    }
+
+    &__highlights {
+        margin-bottom: 15px;
+    }
+
+    &__perks {
+        margin-bottom: 50px;
+    }
+
+    &__advantages {
+        margin-bottom: 80px;
+    }
+}
+
+.about-hero {
+    &__images {
+        margin-bottom: 25px;
+    }
+
+    &__subtitle,
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        color: $accent-color;
+    }
+
+    &__title,
+    &__text {
+        max-width: 421px;
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.about-benefits {
+    &__title {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    &__item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__img {
+        margin-right: 15px;
+    }
+
+    &__svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    &__subtitle {
+        margin-bottom: 7px;
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+}
+
+.about-highlights {
+    background-color: $about-page;
+
+    &__container {
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 50px 20px;
+    }
+
+    &__title,
+    &__text {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+    }
+
+    &__underline {
+        margin: 0 auto;
+        width: 50px;
+        border-bottom: 2px solid $accent-color;
+    }
+
+    &__text {
+        margin-top: 14px;
+        font-size: 14px;
+        line-height: 140%;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.about-perks {
+    padding-top: 20px;
+
+    &__item {
+        position: relative;
+        margin-left: 30px;
+        padding: 20px;
+        max-width: 315px;
+        background-color: $burgerMenu-bg;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 35px;
+        height: 35px;
+        background-color: $white-color;
+        border-radius: 50%;
+    }
+
+    &__svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    &__text {
+        line-height: 140%;
+    }
+}
+
+.about-advantages {
+    &__title {
+        margin-bottom: 38px;
+        text-align: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img {
+        margin-right: 15px;
+    }
+
+    &__inner {
+        max-width: 280px;
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
+
+.about-slogan {
+    margin: 0 auto;
+    max-width: 221px;
+    text-align: center;
+
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}

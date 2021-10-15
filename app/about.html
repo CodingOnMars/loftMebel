@@ -452,9 +452,16 @@
             <article class="about">
                 <div class="container">
                     <section class="about__hero about-hero">
+                        <div class="about-hero__images">
+                            <picture class="about-hero__picture">
+                                <source srcset="images/about-hero_desktop.jpg" media="(min-width: 1024px)">
+                                <img class="about-hero__img" src="images/about-hero_mobile.jpg" alt="Фотография мебели"
+                                    width="216" height="127">
+                            </picture>
+                        </div>
                         <div class="about-hero__info">
                             <h5 class="about-hero__subtitle">О магазине</h5>
-                            <h2 class="about__title about-hero__title">Интернет-магазин «Лофт Мебель»: купите хорошую
+                            <h2 class="about-hero__title about__title">Интернет-магазин «Лофт Мебель»: купите хорошую
                                 мебель в один клик!</h2>
                             <p class="about-hero__text">
                                 Уникальный формат интернет-магазина позволит вам купить лучшую мебель крупнейших
@@ -467,18 +474,11 @@
                                 обеспечивают наиболее привлекательные условия для наших покупателей.
                             </p>
                         </div>
-                        <div class="about-hero__images">
-                            <picture class="about-hero__picture">
-                                <source srcset="images/about-hero_desktop.jpg" media="(min-width: 1024px)">
-                                <img class="about-hero__img" src="images/about-hero_mobile.jpg" alt="Фотография мебели"
-                                    width="216" height="127">
-                            </picture>
-                        </div>
                     </section>
                     <section class="about__benefits about-benefits">
-                        <h2 class="about__title about-benefits__title">Покупайте с выгодой!</h2>
-                        <div class="about-benefits__items about__items">
-                            <div class="about-benefits__item about__item">
+                        <h2 class="about-benefits__title about__title ">Покупайте с выгодой!</h2>
+                        <div class="about-benefits__items">
+                            <div class="about-benefits__item">
                                 <div class="about-benefits__img">
                                     <svg class="about-benefits__svg" width="38" height="38">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-large-1"></use>
@@ -492,7 +492,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="about-benefits__item about__item">
+                            <div class="about-benefits__item">
                                 <div class="about-benefits__img">
                                     <svg class="about-benefits__svg" width="38" height="38">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-large-2"></use>
@@ -507,7 +507,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="about-benefits__item about__item">
+                            <div class="about-benefits__item">
                                 <div class="about-benefits__img">
                                     <svg class="about-benefits__svg" width="38" height="38">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-large-3"></use>
@@ -522,7 +522,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="about-benefits__item about__item">
+                            <div class="about-benefits__item">
                                 <div class="about-benefits__img">
                                     <svg class="about-benefits__svg" width="38" height="38">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-large-4"></use>
@@ -539,7 +539,9 @@
                             </div>
                         </div>
                     </section>
-                    <div class="about__highlights about-highlights">
+                </div>
+                <div class="about__highlights about-highlights">
+                    <div class="about-highlights__container">
                         <p class="about-highlights__title about__subtitle">Самые «вкусные» предложения</p>
                         <div class="about-highlights__underline"></div>
                         <p class="about-highlights__text">Мы делаем всё
@@ -563,11 +565,13 @@
                             комплектующие – у нас вы найдете мебель своей мечты!
                         </p>
                     </div>
+                </div>
+                <div class="container">
                     <div class="about__perks about-perks">
                         <div class="about-perks__items">
                             <div class="about-perks__item">
                                 <div class="about-perks__img">
-                                    <svg class="about-perks" width="20" height="20">
+                                    <svg class="about-perks__svg" width="25" height="25">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-small-1"></use>
                                     </svg>
                                 </div>
@@ -580,7 +584,7 @@
                             </div>
                             <div class="about-perks__item">
                                 <div class="about-perks__img">
-                                    <svg class="about-perks" width="20" height="20">
+                                    <svg class="about-perks__svg" width="25" height="25">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-small-2"></use>
                                     </svg>
                                 </div>
@@ -593,7 +597,7 @@
                             </div>
                             <div class="about-perks__item">
                                 <div class="about-perks__img">
-                                    <svg class="about-perks" width="20" height="20">
+                                    <svg class="about-perks__svg" width="25" height="25">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-small-3"></use>
                                     </svg>
                                 </div>
@@ -608,7 +612,7 @@
                             </div>
                             <div class="about-perks__item">
                                 <div class="about-perks__img">
-                                    <svg class="about-perks" width="20" height="20">
+                                    <svg class="about-perks__svg" width="25" height="25">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-small-4"></use>
                                     </svg>
                                 </div>
@@ -623,9 +627,10 @@
                         </div>
                     </div>
                     <section class="about__advantages about-advantages">
-                        <h2 class="about__title about-advantages__title"></h2>
+                        <h2 class="about-advantages__title about__title">Мы&nbsp;поможем сэкономить время, силы
+                            и&nbsp;деньги!</h2>
                         <div class="about-advantages__items">
-                            <div class="about-advantages__item about__item">
+                            <div class="about-advantages__item">
                                 <div class="about-advantages__img">
                                     <svg class="about-advantages__svg" width="14" height="14">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#green-checkmark"></use>
@@ -638,7 +643,7 @@
                                         подберем для вас достойные варианты по заданным критериям.</p>
                                 </div>
                             </div>
-                            <div class="about-advantages__item about__item">
+                            <div class="about-advantages__item">
                                 <div class="about-advantages__img">
                                     <svg class="about-advantages__svg" width="14" height="14">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#green-checkmark"></use>
@@ -651,7 +656,7 @@
                                         заказом. </p>
                                 </div>
                             </div>
-                            <div class="about-advantages__item about__item">
+                            <div class="about-advantages__item">
                                 <div class="about-advantages__img">
                                     <svg class="about-advantages__svg" width="14" height="14">
                                         <use xlink:href="images/symbol/svg/sprite.symbol.svg#green-checkmark"></use>
@@ -665,8 +670,8 @@
                         </div>
                     </section>
                     <div class="about__slogan about-slogan">
-                        <p class="about-slogan__title">На чем мы не экономим?</p>
-                        <p class="about-slogan__title">На вашем комфорте и
+                        <p class="about-slogan__title about__title">На чем мы не экономим?</p>
+                        <p class="about-slogan__title about__title">На вашем комфорте и
                             качестве мебели!</p>
                     </div>
                 </div>
