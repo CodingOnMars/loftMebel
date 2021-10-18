@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer type="module" src="js/pages/cart.js"></script>
+    <script defer type="module" src="js/pages/about.js"></script>
 </head>
 
 <body>
@@ -129,7 +129,7 @@
                             <li class="menu-icons__item">
                                 <a class="menu-icons__link" aria-label="Корзина" href="cart.html">
                                     <svg class="menu-icons__svg cart-icon cart-icon--active">
-                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#cart-icon_active"></use>
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#cart-icon"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -443,350 +443,243 @@
                             <a class="breadcrumbs__link" href="index.html">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Корзина</a>
+                            <a class="breadcrumbs__link" href="#">О нас</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <section class="cart">
-                <div class="container cart__container">
-                    <div class="cart__top">
-                        <h2 class="cart__title">Ваша корзина</h2>
-                        <p class="cart__total">Всего товаров:
-                            <span class="cart__total-span">4</span>
+            <article class="about">
+                <div class="container">
+                    <section class="about__hero about-hero">
+                        <div class="about-hero__images">
+                            <picture class="about-hero__picture">
+                                <source srcset="images/about-hero_desktop.png" media="(min-width: 768px)">
+                                <img class="about-hero__img" src="images/about-hero_mobile.png" alt="Фотография мебели"
+                                    width="216" height="127">
+                            </picture>
+                            <div class="about-hero__background"></div>
+                        </div>
+                        <div class="about-hero__info">
+                            <h5 class="about-hero__subtitle">О магазине</h5>
+                            <h2 class="about-hero__title about__title">Интернет-магазин «Лофт Мебель»: купите хорошую
+                                мебель в один клик!</h2>
+                            <p class="about-hero__text about__text">
+                                Уникальный формат интернет-магазина позволит вам купить лучшую мебель крупнейших
+                                российских фабрик максимально быстро и&nbsp;по&nbsp;выгодной цене!
+                            </p>
+                            <p class="about-hero__text about__text">
+                                Мы&nbsp;благодарим за&nbsp;доверие более десятка производителей, которые дали
+                                нам возможность представлять лучшие образцы их&nbsp;продукции в&nbsp;российском
+                                интернет-пространстве. Прямые договоры на&nbsp;поставку мебели с&nbsp;фабрик
+                                обеспечивают наиболее привлекательные условия для наших покупателей.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="about__benefits about-benefits">
+                        <h2 class="about-benefits__title about__title ">Покупайте с выгодой!</h2>
+                        <div class="about-benefits__items">
+                            <div class="about-benefits__item">
+                                <div class="about-benefits__img">
+                                    <svg class="about-benefits__svg" width="38" height="38">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-large-1"></use>
+                                    </svg>
+                                </div>
+                                <div class="about-benefits__inner">
+                                    <p class="about-benefits__subtitle about__subtitle">Лучшая цена</p>
+                                    <p class="about-benefits__text about__text">
+                                        Предлагаем близкие к оптовым цены, которые дают возможность приобретать мебель
+                                        дешевле, чем в розничных салонах и шоу-румах.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-benefits__item">
+                                <div class="about-benefits__img">
+                                    <svg class="about-benefits__svg" width="38" height="38">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-large-2"></use>
+                                    </svg>
+                                </div>
+                                <div class="about-benefits__inner">
+                                    <p class="about-benefits__subtitle about__subtitle">Прямые поставки</p>
+                                    <p class="about-benefits__text about__text">
+                                        С ведущих мебельных фабрик уменьшают срок выполнения вашего заказа, даже если
+                                        речь идет об изготовлении предметов по индивидуальному проекту.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-benefits__item">
+                                <div class="about-benefits__img">
+                                    <svg class="about-benefits__svg" width="38" height="38">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-large-3"></use>
+                                    </svg>
+                                </div>
+                                <div class="about-benefits__inner">
+                                    <p class="about-benefits__subtitle about__subtitle">Экономие времени</p>
+                                    <p class="about-benefits__text about__text">
+                                        Не нашли оптимальный вариант или нет
+                                        времени на поиски? Оставьте онлайн-заявку с критериями, и мы предложим вам
+                                        несколько достойных образцов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-benefits__item">
+                                <div class="about-benefits__img">
+                                    <svg class="about-benefits__svg" width="38" height="38">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-large-4"></use>
+                                    </svg>
+                                </div>
+                                <div class="about-benefits__inner">
+                                    <p class="about-benefits__subtitle about__subtitle">Изготовление на заказ</p>
+                                    <p class="about-benefits__text about__text">
+                                        Принимаем заявки на изготовление мебели по персональному дизайн-проекту от
+                                        покупателей из любой точки России.
+                                        Просим быть готовыми к авансированной оплате персональных заказов.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="about__highlights about-highlights">
+                    <div class="about-highlights__container">
+                        <p class="about-highlights__title about__subtitle">Самые «вкусные» предложения</p>
+                        <div class="about-highlights__underline"></div>
+                        <p class="about-highlights__text about__text">Мы делаем всё
+                            необходимое, чтобы покупатели получали доступ к актуальным новинкам, которые
+                            представляет российский мебельный рынок. Познакомиться с каждой моделью,
+                            сравнить цены на аналоги и выбрать лучшее вы можете прямо сейчас. Хотите
+                            первыми узнавать о самых выгодных предложениях? Тогда подписывайтесь на
+                            информационную рассылку!</p>
+                        <p class="about-highlights__title about__subtitle">Гарантированное качество</p>
+                        <div class="about-highlights__underline"></div>
+                        <p class="about-highlights__text about__text">Вся продукция сопровождается
+                            гарантией производителя. В каталогах представлена только сертифицированная
+                            мебель. Собственный контроль качества тщательно проверяет каждый образец
+                            перед отправкой заказчику. Покупатели получают необходимые документы –
+                            гарантийный талон и чек.</p>
+                        <p class="about-highlights__title about__subtitle">Впечатляющий ассортимент</p>
+                        <div class="about-highlights__underline"></div>
+                        <p class="about-highlights__text about__text">Ежедневно мы выбираем для
+                            наших каталогов идеальные образцы из товарной матрицы производителей по всей
+                            России. Модные расцветки, экологически безопасные материалы, надежные
+                            комплектующие – у нас вы найдете мебель своей мечты!
                         </p>
                     </div>
-                    <div class="cart__items">
-                        <div class="cart__item cart-item">
-                            <div class="cart-item__container">
-                                <div class="cart-item__picture">
-                                    <img class="cart-item__img" src="images/content/bestsellers/bestellers-3.jpg"
-                                        alt="Товар, добавленный в корзину" width="100" height="75">
+                </div>
+                <div class="container">
+                    <div class="about__perks about-perks">
+                        <div class="about-perks__items">
+                            <div class="about-perks__item">
+                                <div class="about-perks__img">
+                                    <svg class="about-perks__svg" width="25" height="25">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-small-1"></use>
+                                    </svg>
                                 </div>
-                                <div class="cart-item__inner">
-                                    <div class="cart-item__top">
-                                        <p class="cart-item__name">Динс Velvet Yellow</p>
-                                        <div class="cart-item__price cart-discount">
-                                            <svg class="cart-discount__svg discount-svg" width="20" height="20">
-                                                <use xlink:href="images/symbol/svg/sprite.symbol.svg#sale-icon"></use>
-                                            </svg>
-                                            <p class="cart-discount__value">-25%</p>
-                                            <p class="cart-discount__old-price">37 990₽</p>
-                                            <p class="cart-discount__price cart-item__current-price">28 490₽</p>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item__bottom">
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Цвет:</span>
-                                            <span class="cart-item__value">Желтый</span>
-                                            <span class="cart-item__color cart-item__color--yellow"></span>
-                                        </div>
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Количество:</span>
-                                            <div class="cart-item__amount">
-                                                <button class="cart-item__amount-btn btn-reset">
-                                                    −
-                                                </button>
-                                                <span class="cart-item__value cart-item__value--amount">1</span>
-                                                <button class="cart-item__amount-btn btn-reset">+</button>
-                                            </div>
-                                        </div>
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Размер(Ш×Д×В):</span>
-                                            <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="about-perks__title about__subtitle">Особенные условия для оптовиков</p>
+                                <p class="about-perks__text about__text">
+                                    Число наших оптовых
+                                    покупателей неуклонно растет и всё потому, что мы сумели предложить
+                                    владельцам мебельных магазинов наиболее выгодные условия.
+                                </p>
                             </div>
-                            <button class="cart-item__btn btn-reset" type="button">
-                                <svg class="cart-item__svg" width="12" height="12">
-                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
-                                    </use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="cart__item cart-item">
-                            <div class="cart-item__container">
-                                <div class="cart-item__picture">
-                                    <img class="cart-item__img" src="images/content/bestsellers/bestellers-7.jpg"
-                                        alt="Товар, добавленный в корзину" width="100" height="75">
+                            <div class="about-perks__item">
+                                <div class="about-perks__img">
+                                    <svg class="about-perks__svg" width="25" height="25">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-small-2"></use>
+                                    </svg>
                                 </div>
-                                <div class="cart-item__inner">
-                                    <div class="cart-item__top">
-                                        <p class="cart-item__name">Стелла Дуб Сонома</p>
-                                        <div class="cart-item__price">
-                                            <p class="cart-discount__price cart-item__current-price">8 990₽</p>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item__bottom">
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Цвет:</span>
-                                            <span class="cart-item__value">Бежевый</span>
-                                            <span class="cart-item__color cart-item__color--beige"></span>
-                                        </div>
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Количество:</span>
-                                            <div class="cart-item__amount">
-                                                <button class="cart-item__amount-btn btn-reset">
-                                                    −
-                                                </button>
-                                                <span class="cart-item__value cart-item__value--amount">1</span>
-                                                <button class="cart-item__amount-btn btn-reset">+</button>
-                                            </div>
-                                        </div>
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Размер(Ш×Д×В):</span>
-                                            <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="about-perks__title about__subtitle">Оперативная доставка</p>
+                                <p class="about-perks__text about__text">
+                                    Собственная курьерская служба
+                                    быстро привезет купленную мебель по указанному адресу.
+                                    В российские регионы доставка осуществляется силами транспортных компаний.
+                                </p>
                             </div>
-                            <button class="cart-item__btn btn-reset" type="button">
-                                <svg class="cart-item__svg" width="12" height="12">
-                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
-                                    </use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="cart__item cart-item">
-                            <div class="cart-item__container">
-                                <div class="cart-item__picture">
-                                    <img class="cart-item__img" src="images/content/bestsellers/bestellers-13.jpg"
-                                        alt="Товар, добавленный в корзину" width="100" height="75">
+                            <div class="about-perks__item">
+                                <div class="about-perks__img">
+                                    <svg class="about-perks__svg" width="25" height="25">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-small-3"></use>
+                                    </svg>
                                 </div>
-                                <div class="cart-item__inner">
-                                    <div class="cart-item__top">
-                                        <p class="cart-item__name">Вилли Pink</p>
-                                        <div class="cart-item__price">
-                                            <p class="cart-discount__price cart-item__current-price">21 990₽</p>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item__bottom">
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Цвет:</span>
-                                            <span class="cart-item__value">Розовый</span>
-                                            <span class="cart-item__color cart-item__color--pink"></span>
-                                        </div>
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Количество:</span>
-                                            <div class="cart-item__amount">
-                                                <button class="cart-item__amount-btn btn-reset">
-                                                    −
-                                                </button>
-                                                <span class="cart-item__value cart-item__value--amount">1</span>
-                                                <button class="cart-item__amount-btn btn-reset">+</button>
-                                            </div>
-                                        </div>
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Размер(Ш×Д×В):</span>
-                                            <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="cart-item__btn btn-reset" type="button">
-                                <svg class="cart-item__svg" width="12" height="12">
-                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
-                                    </use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="cart__item cart-item">
-                            <div class="cart-item__container">
-                                <div class="cart-item__picture">
-                                    <img class="cart-item__img" src="images/content/bestsellers/bestellers-5.jpg"
-                                        alt="Товар, добавленный в корзину" width="100" height="75">
-                                </div>
-                                <div class="cart-item__inner">
-                                    <div class="cart-item__top">
-                                        <p class="cart-item__name">Шерона Barhat Grey</p>
-                                        <div class="cart-item__price">
-                                            <p class="cart-discount__price cart-item__current-price">21 990₽</p>
-                                        </div>
-                                    </div>
-                                    <div class="cart-item__bottom">
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Цвет:</span>
-                                            <span class="cart-item__value">Темно-серый</span>
-                                            <span class="cart-item__color cart-item__color--gray"></span>
-                                        </div>
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Количество:</span>
-                                            <div class="cart-item__amount">
-                                                <button class="cart-item__amount-btn btn-reset">
-                                                    −
-                                                </button>
-                                                <span class="cart-item__value cart-item__value--amount">1</span>
-                                                <button class="cart-item__amount-btn btn-reset">+</button>
-                                            </div>
-                                        </div>
-                                        <div class="cart-item__options">
-                                            <span class="cart-item__name">Размер(Ш×Д×В):</span>
-                                            <span class="cart-item__value">218 СМ × 95 СМ × 90 СМ</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="cart-item__btn btn-reset" type="button">
-                                <svg class="cart-item__svg" width="12" height="12">
-                                    <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
-                                    </use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="cart__checkout cart-checkout">
-                        <div class="cart-checkout__price">
-                            <span class="cart-checkout__name">Итоговая стоимость:</span>
-                            <span class="cart-checkout__value">81 460₽</span>
-                        </div>
-                        <button class="cart-checkout__btn btn-reset action-btn" type="submit">Оформить заказ</button>
-                    </div>
+                                <p class="about-perks__title about__subtitle">Внимательный сервис</p>
+                                <p class="about-perks__text about__text">
+                                    Квалифицированные менеджеры
+                                    интернет-магазина ответят на все вопросы по ассортименту и предоставляемым
+                                    возможностям, а также помогут оформить заказ и проконтролируют реализацию клиентских
+                                    пожеланий при заказе мебели.
 
-                    <div class="cart__slider cart-slider">
-                        <h3 class="cart__title cart-slider__title">Вам может понравиться</h3>
-                        <div class="cart-slider__items">
-                            <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset" type="button"
-                                    aria-label="Добавить в желаемое">
-                                    <svg class="sale-hits__svg wishlist-icon">
-                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
-                                    </svg>
-                                </button>
-                                <a class="sale-hits__link" href="product-page.html">
-                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-13.jpg"
-                                        alt="Furniture item photo" width="200" height="150">
-                                    <h3 class="sale-hits__title">Вилли Pink</h3>
-                                    <p class="sale-hits__text">Детская мебель</p>
-                                    <span class="sale-hits__span">21 990₽</span>
-                                </a>
-                                <div class="sale-hits__sizes sizes hidden">
-                                    <p class="sizes__title">Размеры</p>
-                                    <div class="sizes__items">
-                                        <div class="sizes__item">
-                                            <span class="sizes__subtitle">Ширина</span>
-                                            <span class="sizes__value">43 см</span>
-                                        </div>
-                                        <div class="sizes__item sizes__item--pseudo">
-                                            <span class="sizes__subtitle">Глубина</span>
-                                            <span class="sizes__value">50 см</span>
-                                        </div>
-                                        <div class="sizes__item">
-                                            <span class="sizes__subtitle">Высота</span>
-                                            <span class="sizes__value">120 см</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
-                                    корзину</button>
+                                </p>
                             </div>
-                            <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset" type="button"
-                                    aria-label="Добавить в желаемое">
-                                    <svg class="sale-hits__svg wishlist-icon">
-                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
+                            <div class="about-perks__item">
+                                <div class="about-perks__img">
+                                    <svg class="about-perks__svg" width="25" height="25">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#about-icon-small-4"></use>
                                     </svg>
-                                </button>
-                                <a class="sale-hits__link" href="product-page.html">
-                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-14.jpg"
-                                        alt="Furniture item photo" width="200" height="150">
-                                    <h3 class="sale-hits__title">Сан-Паулу Velvet Brown</h3>
-                                    <p class="sale-hits__text">Диваны</p>
-                                    <span class="sale-hits__span">18 990₽</span>
-                                </a>
-                                <div class="sale-hits__sizes sizes hidden">
-                                    <p class="sizes__title">Размеры</p>
-                                    <div class="sizes__items">
-                                        <div class="sizes__item">
-                                            <span class="sizes__subtitle">Ширина</span>
-                                            <span class="sizes__value">43 см</span>
-                                        </div>
-                                        <div class="sizes__item sizes__item--pseudo">
-                                            <span class="sizes__subtitle">Глубина</span>
-                                            <span class="sizes__value">50 см</span>
-                                        </div>
-                                        <div class="sizes__item">
-                                            <span class="sizes__subtitle">Высота</span>
-                                            <span class="sizes__value">120 см</span>
-                                        </div>
-                                    </div>
                                 </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
-                                    корзину</button>
-                            </div>
-                            <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset" type="button"
-                                    aria-label="Добавить в желаемое">
-                                    <svg class="sale-hits__svg wishlist-icon">
-                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
-                                    </svg>
-                                </button>
-                                <a class="sale-hits__link" href="product-page.html">
-                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-15.jpg"
-                                        alt="Furniture item photo" width="200" height="150">
-                                    <h3 class="sale-hits__title">Стеллаж Варди</h3>
-                                    <p class="sale-hits__text">Стеллажи</p>
-                                    <span class="sale-hits__span">10 990₽</span>
-                                </a>
-                                <div class="sale-hits__sizes sizes hidden">
-                                    <p class="sizes__title">Размеры</p>
-                                    <div class="sizes__items">
-                                        <div class="sizes__item">
-                                            <span class="sizes__subtitle">Ширина</span>
-                                            <span class="sizes__value">43 см</span>
-                                        </div>
-                                        <div class="sizes__item sizes__item--pseudo">
-                                            <span class="sizes__subtitle">Глубина</span>
-                                            <span class="sizes__value">50 см</span>
-                                        </div>
-                                        <div class="sizes__item">
-                                            <span class="sizes__subtitle">Высота</span>
-                                            <span class="sizes__value">120 см</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
-                                    корзину</button>
-                            </div>
-                            <div class="sale-hits__item sale-hits__item--active">
-                                <button class="sale-hits__btn-close btn-reset" type="button"
-                                    aria-label="Добавить в желаемое">
-                                    <svg class="sale-hits__svg wishlist-icon">
-                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
-                                    </svg>
-                                </button>
-                                <a class="sale-hits__link" href="product-page.html">
-                                    <img class="sale-hits__img" src="./images/content/bestsellers/bestellers-16.jpg"
-                                        alt="Furniture item photo" width="200" height="150">
-                                    <h3 class="sale-hits__title">Стеллаж модульный Ариана</h3>
-                                    <p class="sale-hits__text">Стеллажи</p>
-                                    <span class="sale-hits__span">12 990₽</span>
-                                </a>
-                                <div class="sale-hits__sizes sizes hidden">
-                                    <p class="sizes__title">Размеры</p>
-                                    <div class="sizes__items">
-                                        <div class="sizes__item">
-                                            <span class="sizes__subtitle">Ширина</span>
-                                            <span class="sizes__value">43 см</span>
-                                        </div>
-                                        <div class="sizes__item sizes__item--pseudo">
-                                            <span class="sizes__subtitle">Глубина</span>
-                                            <span class="sizes__value">50 см</span>
-                                        </div>
-                                        <div class="sizes__item">
-                                            <span class="sizes__subtitle">Высота</span>
-                                            <span class="sizes__value">120 см</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="sale-hits__btn action-btn btn-reset hidden" type="button">Добавить в
-                                    корзину</button>
+                                <p class="about-perks__title about__subtitle">Каждый пятый покупатель заказывает у нас
+                                    повторно! </p>
+                                <p class="about-perks__text about__text">
+                                    И мы благодарим всех, кто воспользовался нашим уникальным предложением, заказал
+                                    мебель быстро и недорого и порекомендовал друзьям и
+                                    знакомым.
+                                </p>
                             </div>
                         </div>
+                    </div>
+                    <section class="about__advantages about-advantages">
+                        <h2 class="about-advantages__title about__title">Мы&nbsp;поможем сэкономить время, силы
+                            и&nbsp;деньги!</h2>
+                        <div class="about-advantages__items">
+                            <div class="about-advantages__item">
+                                <div class="about-advantages__img">
+                                    <svg class="about-advantages__svg" width="14" height="14">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#green-checkmark"></use>
+                                    </svg>
+                                </div>
+                                <div class="about-advantages__inner">
+                                    <p class="about-advantages__subtitle">Время</p>
+                                    <p class="about-advantages__text about__text">Примем вашу заявку в кратчайшие сроки.
+                                        При
+                                        необходимости
+                                        подберем для вас достойные варианты по заданным критериям.</p>
+                                </div>
+                            </div>
+                            <div class="about-advantages__item">
+                                <div class="about-advantages__img">
+                                    <svg class="about-advantages__svg" width="14" height="14">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#green-checkmark"></use>
+                                    </svg>
+                                </div>
+                                <div class="about-advantages__inner">
+                                    <p class="about-advantages__subtitle">Силы</p>
+                                    <p class="about-advantages__text about__text">Закупим оптом или закажем на фабрике,
+                                        избавив от
+                                        длительных обсуждений заказа с исполнителем. Курируем все этапы работы над
+                                        заказом. </p>
+                                </div>
+                            </div>
+                            <div class="about-advantages__item">
+                                <div class="about-advantages__img">
+                                    <svg class="about-advantages__svg" width="14" height="14">
+                                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#green-checkmark"></use>
+                                    </svg>
+                                </div>
+                                <div class="about-advantages__inner">
+                                    <p class="about-advantages__subtitle">Деньги</p>
+                                    <p class="about-advantages__text about__text">Вы точно купите мебель дешевле, чем в
+                                        розницу.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="about__slogan about-slogan">
+                        <p class="about-slogan__title about__title">На чем мы не экономим?</p>
+                        <p class="about-slogan__title about__title">На вашем комфорте и
+                            качестве мебели!</p>
                     </div>
                 </div>
-            </section>
+            </article>
 
         </main>
 

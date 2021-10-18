@@ -364,6 +364,115 @@
 
     // End of Account
 
+    // Start About page
+    .about {
+        margin-bottom: 120px;
+
+        &__hero {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__benefits {
+            margin-bottom: 60px;
+        }
+
+        &__highlights {
+            margin-bottom: 30px;
+        }
+
+        &__perks {
+            margin-bottom: 70px;
+        }
+
+        &__advantages {
+            margin-bottom: 120px;
+        }
+    }
+
+    .about-hero {
+        display: flex;
+        justify-content: space-between;
+
+        &__images {
+            order: 2;
+            margin-left: 50px;
+        }
+
+        &__img {
+            width: 100%;
+            max-width: 500px;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &__text {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .about-benefits {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 25px;
+        }
+    }
+
+    .about-perks {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            height: auto;
+        }
+
+        &__item {
+            max-width: 500px;
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .about-advantages {
+        &__items {
+            display: flex;
+        }
+
+        &__item {
+            align-items: unset;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__img {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .about-slogan {
+        max-width: 455px;
+    }
+
+
+
+    // End About page
+
     .footer {
         padding-top: 30px;
         padding-bottom: 42px;
@@ -748,7 +857,7 @@
         }
     }
 
-    // Account
+    // Start of Account
     .personal-account {
         padding-top: 40px;
         padding-bottom: 170px;
@@ -757,6 +866,50 @@
     .orders-table {
         max-width: 600px;
     }
+
+    // End of Account
+
+    // Start About page
+
+    .about {
+        &__hero {
+            margin-bottom: 100px;
+        }
+
+        &__benefits {
+            margin-bottom: 95px;
+        }
+
+        &__highlights {
+            margin-bottom: 48px;
+        }
+
+        &__perks {
+            margin-bottom: 100px;
+        }
+
+        &__advantages {
+            margin-bottom: 174px;
+        }
+
+        &__slogan {
+            margin-bottom: 200px;
+        }
+    }
+
+    .about-hero {
+        &__img {
+            max-width: 633px;
+        }
+
+        &__background {
+            top: -20%;
+            right: 0;
+            height: 135%;
+        }
+    }
+
+    // End About page
 
     .footer {
         padding-bottom: 60px;
