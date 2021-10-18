@@ -35,7 +35,25 @@
 
 .about-hero {
     &__images {
+        position: relative;
         margin-bottom: 25px;
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        object-fit: contain;
+        z-index: map-get($zindex, burgerMenu);
+    }
+
+    &__background {
+        position: absolute;
+        top: -15%;
+        right: -15px;
+        width: 60%;
+        height: 130%;
+        background-color: $about-page;
+        z-index: map-get($zindex, overlay);
     }
 
     &__subtitle,

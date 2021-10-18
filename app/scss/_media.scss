@@ -369,7 +369,7 @@
         margin-bottom: 120px;
 
         &__hero {
-            margin-bottom: 70px;
+            margin-bottom: 50px;
         }
 
         &__title {
@@ -378,6 +378,22 @@
 
         &__subtitle {
             font-size: 18px;
+        }
+
+        &__benefits {
+            margin-bottom: 60px;
+        }
+
+        &__highlights {
+            margin-bottom: 30px;
+        }
+
+        &__perks {
+            margin-bottom: 70px;
+        }
+
+        &__advantages {
+            margin-bottom: 120px;
         }
     }
 
@@ -855,9 +871,41 @@
 
     // Start About page
 
+    .about {
+        &__hero {
+            margin-bottom: 100px;
+        }
+
+        &__benefits {
+            margin-bottom: 95px;
+        }
+
+        &__highlights {
+            margin-bottom: 48px;
+        }
+
+        &__perks {
+            margin-bottom: 100px;
+        }
+
+        &__advantages {
+            margin-bottom: 174px;
+        }
+
+        &__slogan {
+            margin-bottom: 200px;
+        }
+    }
+
     .about-hero {
         &__img {
             max-width: 633px;
+        }
+
+        &__background {
+            top: -20%;
+            right: 0;
+            height: 135%;
         }
     }
 
