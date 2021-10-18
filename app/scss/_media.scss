@@ -349,6 +349,12 @@
     // End of Catalog
 
     // Start of Account
+    .personal-account {
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+
     .cashback {
         &__wrapper {
             display: flex;
@@ -469,8 +475,6 @@
         max-width: 455px;
     }
 
-
-
     // End About page
 
     .footer {
@@ -541,12 +545,6 @@
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
-        }
-    }
-
-    .socials__link {
-        &:not(:last-child) {
-            margin-bottom: 0;
         }
     }
 }

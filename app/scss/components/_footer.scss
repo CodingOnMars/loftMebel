@@ -18,11 +18,14 @@
     &__text {
         max-width: 195px;
     }
+
+    &__socials {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .socials {
-    display: flex;
-    flex-wrap: wrap;
 
     &__link {
         position: relative;

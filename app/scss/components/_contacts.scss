@@ -1,0 +1,91 @@
+.contacts {
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        margin-bottom: 50px;
+    }
+}
+
+.contacts-info {
+
+    &__items,
+    &__form {
+        margin-bottom: 50px;
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        margin-bottom: 5px;
+    }
+
+    &__input,
+    &__textarea {
+        padding: 12px;
+        width: 100%;
+        max-width: 380px;
+        font-family: inherit;
+        font-size: 16px;
+        line-height: 1;
+        background-color: $burgerMenu-bg;
+        border: 1px solid $circle-first;
+        box-shadow: $input-shadow;
+    }
+
+    &__input {
+        height: 38px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__textarea {
+        resize: vertical;
+        min-height: 160px;
+    }
+
+    &__buttons {
+        padding-top: 30px;
+    }
+
+    &__file-label {
+        margin-right: 30px;
+        padding: 10px 20px;
+        border: 1px solid $mercury;
+        box-shadow: $secondary-shadow;
+
+        &:focus-within {
+            outline: 2px solid $accent-color;
+        }
+    }
+
+    &__file-btn {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        clip-path: inset(50%);
+        border: 0;
+    }
+
+    &__btn {
+        padding: 10px 20px;
+    }
+}
