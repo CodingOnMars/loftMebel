@@ -84,12 +84,20 @@
     }
 
     .action-btn,
-    .show-more {
+    .show-more,
+    .contacts-form__file-label {
         transition: background-color, .3s ease-in-out;
 
         &:hover {
             transition: background-color, .3s ease-in-out;
             background-color: $accent-color;
+        }
+    }
+
+    .contacts-form__file-label {
+        &:hover {
+            background-color: $burgerMenu-bg;
+            cursor: pointer;
         }
     }
 }

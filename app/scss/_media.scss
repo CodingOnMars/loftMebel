@@ -11,6 +11,11 @@
             height: 32px;
         }
     }
+
+    .contacts-form__file-label {
+        margin-right: 30px;
+        padding: 10px 20px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -349,6 +354,12 @@
     // End of Catalog
 
     // Start of Account
+    .personal-account {
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+
     .cashback {
         &__wrapper {
             display: flex;
@@ -469,9 +480,35 @@
         max-width: 455px;
     }
 
-
-
     // End About page
+
+    // Start of Contacts
+
+    .contacts {
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    .contacts-info {
+        &__items {
+            display: flex;
+        }
+
+        &__item {
+
+            &:not(:last-child) {
+                margin-right: 15px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__form {
+            margin-right: 100px;
+            margin-bottom: 0;
+        }
+    }
+
+    // End of Contacts
 
     .footer {
         padding-top: 30px;
@@ -541,12 +578,6 @@
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
-        }
-    }
-
-    .socials__link {
-        &:not(:last-child) {
-            margin-bottom: 0;
         }
     }
 }
