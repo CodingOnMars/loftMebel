@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer type="module" src="js/pages/contacts.js"></script>
 </head>
 
 <body>
@@ -454,12 +455,18 @@
                         <h2 class="contacts-info__title contacts__title page-title">Свяжитесь с нами</h2>
                         <div class="contacts-info__items">
                             <form class="contacts-info__form contacts-form">
-                                <label class="contacts-form__label page-label" for="contacts-name">Ваше
-                                    имя</label>
-                                <input class="contacts-form__input" id="contacts-email" type="text">
-                                <label class="contacts-form__label page-label" for="contacts-name">Ваш
-                                    e-mail</label>
-                                <input class="contacts-form__input" id="contacts-email" type="email">
+                                <div class="contacts-info__items">
+                                    <div class="contacts-info__item">
+                                        <label class="contacts-form__label page-label" for="contacts-name">Ваше
+                                            имя</label>
+                                        <input class="contacts-form__input" id="contacts-email" type="text">
+                                    </div>
+                                    <div class="contacts-info__item">
+                                        <label class="contacts-form__label page-label" for="contacts-name">Ваш
+                                            e-mail</label>
+                                        <input class="contacts-form__input" id="contacts-email" type="email">
+                                    </div>
+                                </div>
                                 <label class="contacts-form__label page-label" for="contacts-message">Сообщение</label>
                                 <textarea class="contacts-form__textarea" id="contacts-message"></textarea>
                                 <div class="contacts-form__buttons">
@@ -476,7 +483,7 @@
                                 <a class="socials__link socials__link--instagram" href="#">Instagram</a>
                                 <a class="socials__link socials__link--email"
                                     href="mailto:loft-mebel-anapa@lm.com">loft-mebel-anapa@lm.com</a>
-                                <p class="contacts-info__socials-address">г. Анапа, Владимирская улица, 41</p>
+                                <p class="contacts-info__socials-address">Адрес: г. Анапа, Владимирская улица, 41</p>
                             </div>
                         </div>
                     </section>

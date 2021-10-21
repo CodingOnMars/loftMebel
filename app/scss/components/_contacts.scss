@@ -18,6 +18,15 @@
         margin-bottom: 50px;
     }
 
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
     &__socials {
         display: flex;
         flex-direction: column;
@@ -36,7 +45,7 @@
     &__textarea {
         padding: 12px;
         width: 100%;
-        max-width: 380px;
+        max-width: 450px;
         font-family: inherit;
         font-size: 16px;
         line-height: 1;
@@ -47,10 +56,6 @@
 
     &__input {
         height: 38px;
-
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
     }
 
     &__textarea {
@@ -63,8 +68,8 @@
     }
 
     &__file-label {
-        margin-right: 30px;
-        padding: 10px 20px;
+        margin-right: 10px;
+        padding: 10px;
         border: 1px solid $mercury;
         box-shadow: $secondary-shadow;
 

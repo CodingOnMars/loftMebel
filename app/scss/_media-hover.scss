@@ -96,7 +96,8 @@
 
     .contacts-form__file-label {
         &:hover {
-            color: $white-color;
+            background-color: $burgerMenu-bg;
+            cursor: pointer;
         }
     }
 }
