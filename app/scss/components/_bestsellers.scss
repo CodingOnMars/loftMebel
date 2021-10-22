@@ -8,6 +8,10 @@
     }
 
     &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
+        place-items: center;
+        gap: 15px;
         margin-top: 15px;
     }
 
@@ -17,16 +21,7 @@
 }
 
 .sale-hits {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
-    place-items: center;
-    gap: 15px;
-
     &__item {
-        display: none;
-    }
-
-    &__item--active {
         display: flex;
         flex-direction: column;
         padding: 20px;
