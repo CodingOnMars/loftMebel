@@ -1,8 +1,7 @@
 import get from './getElement.js';
-import { products } from '../local-data/products.js';
 
 // Display products
-const displayProducts = () => {
+const displayProducts = products => {
 	const productsContainer = get('.sale-hits');
 
 	const newProducts = products
@@ -33,7 +32,7 @@ const displayProducts = () => {
               <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
             </svg>
           </button>
-          <button class="sale-hits__btn-top btn-reset" type="button" aria-label="Добавить в корзину">
+          <button class="sale-hits__btn-top sale-hits__btn-buy btn-reset" type="button" aria-label="Добавить в корзину" onclick="addToCart(${id})">
             <svg class="sale-hits__svg wishlist-icon">
               <use xlink:href="images/symbol/svg/sprite.symbol.svg#bag-icon"></use>
             </svg>
@@ -57,11 +56,11 @@ const displayProducts = () => {
               </div>
               <div class="sizes__item sizes__item--pseudo">
                 <span class="sizes__subtitle">Глубина</span>
-                <span class="sizes__value">50 см</span>
+                <span class="sizes__value">${depth}</span>
               </div>
               <div class="sizes__item">
                 <span class="sizes__subtitle">Высота</span>
-                <span class="sizes__value">120 см</span>
+                <span class="sizes__value">${height}</span>
               </div>
             </div>
         </div>
