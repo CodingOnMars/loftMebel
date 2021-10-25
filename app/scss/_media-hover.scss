@@ -85,7 +85,8 @@
 
     .action-btn,
     .show-more,
-    .contacts-form__file-label {
+    .contacts-form__file-label,
+    .cart-item__btn {
         transition: background-color, .3s ease-in-out;
 
         &:hover {
@@ -98,6 +99,12 @@
         &:hover {
             background-color: $burgerMenu-bg;
             cursor: pointer;
+        }
+    }
+
+    .cart-item__btn {
+        &:hover {
+            background-color: $tapestry;
         }
     }
 }
