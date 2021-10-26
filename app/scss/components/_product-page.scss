@@ -150,6 +150,7 @@
 
     &__input {
         width: 70px;
+        border: 1px solid $silver-chalice;
     }
 }
 
@@ -157,7 +158,8 @@
 
     &,
     &__option {
-        width: 70px;
+        padding: 0 2px;
+        width: 100px;
         height: 40px;
         border: none;
         box-shadow: $secondary-shadow;
