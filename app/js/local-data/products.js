@@ -124,8 +124,8 @@ export const products = [
 		id: 8,
 		name: 'Бенфлит Grey',
 		price: 7200,
-		oldPrice: null,
-		discountValue: null,
+		oldPrice: 7920,
+		discountValue: 10,
 		instock: 30,
 		category: 'Журнальные столы',
 		dimensions: {

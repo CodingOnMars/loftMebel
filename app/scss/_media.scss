@@ -803,7 +803,8 @@
         display: block;
     }
 
-    .hidden {
+    .sale-hits__sizes--hidden,
+    .sale-hits__btn--hidden {
         opacity: 0;
         transition: opacity .5s ease-out;
     }

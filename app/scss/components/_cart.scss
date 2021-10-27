@@ -155,6 +155,10 @@
         padding: 12px 50px;
         box-shadow: $max-height-shadow;
     }
+
+    &__btn--hidden {
+        display: none;
+    }
 }
 
 .cart-slider {

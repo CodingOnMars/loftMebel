@@ -32,6 +32,7 @@ build/Release
 /build
 /dist
 app/css/
+app/js/local-data/products.json
 
 # Dependency directories
 node_modules/
