@@ -154,8 +154,8 @@ export const products = [
 		id: 10,
 		name: 'Валенсия Beige',
 		price: 19990,
-		oldPrice: null,
-		discountValue: null,
+		oldPrice: 21989,
+		discountValue: 10,
 		instock: 14,
 		category: 'Шкафы',
 		dimensions: {
