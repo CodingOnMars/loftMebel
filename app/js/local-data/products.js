@@ -124,8 +124,8 @@ export const products = [
 		id: 8,
 		name: 'Бенфлит Grey',
 		price: 7200,
-		oldPrice: 7920,
-		discountValue: 10,
+		oldPrice: null,
+		discountValue: null,
 		instock: 30,
 		category: 'Журнальные столы',
 		dimensions: {
@@ -154,8 +154,8 @@ export const products = [
 		id: 10,
 		name: 'Валенсия Beige',
 		price: 19990,
-		oldPrice: null,
-		discountValue: null,
+		oldPrice: 21989,
+		discountValue: 10,
 		instock: 14,
 		category: 'Шкафы',
 		dimensions: {

@@ -44,7 +44,7 @@ const displayProducts = products => {
           <p class="sale-hits__text">${category}</p>
           <span class="sale-hits__span sale-hits__price">${price}₽</span>
           <span class="sale-hits__span sale-hits__old-price sale-hits__span--line-through">${
-						oldPrice === null ? '' : `${oldPrice}`
+						oldPrice === null ? '' : `${oldPrice}₽`
 					}</span>
         </a>
         <div class="sale-hits__sizes sale-hits__sizes--hidden sizes">
