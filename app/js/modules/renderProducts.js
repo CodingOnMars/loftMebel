@@ -1,9 +1,8 @@
 import get from './getElement.js';
 
-// Display products
-const displayProducts = products => {
-	const productsContainer = get('.sale-hits');
+export const productsContainer = get('.sale-hits');
 
+export const renderProducts = products => {
 	const newProducts = products
 		.map(product => {
 			const {
@@ -32,7 +31,7 @@ const displayProducts = products => {
               <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
             </svg>
           </button>
-          <button class="sale-hits__btn-top sale-hits__btn-buy btn-reset" type="button" aria-label="Добавить в корзину">
+          <button class="sale-hits__btn-top sale-hits__btn-buy btn-reset" type="button" aria-label="Добавить в корзину" data-cart-mobile>
             <svg class="sale-hits__svg wishlist-icon">
               <use xlink:href="images/symbol/svg/sprite.symbol.svg#bag-icon"></use>
             </svg>
@@ -42,10 +41,11 @@ const displayProducts = products => {
           <img class="sale-hits__img" src="${imgSrc}" alt="Фотография мебели" width="200" height="150">
           <h3 class="sale-hits__title">${name}</h3>
           <p class="sale-hits__text">${category}</p>
-          <span class="sale-hits__span sale-hits__price">${price}₽</span>
+          <span class="sale-hits__span sale-hits__price">${price} ₽</span>
           <span class="sale-hits__span sale-hits__old-price sale-hits__span--line-through">${
-						oldPrice === null ? '' : `${oldPrice}₽`
-					}</span>
+						oldPrice === null ? '' : `${oldPrice} ₽`
+					}
+          </span>
         </a>
         <div class="sale-hits__sizes sale-hits__sizes--hidden sizes">
           <p class="sizes__title">Размеры</p>
@@ -64,12 +64,10 @@ const displayProducts = products => {
               </div>
             </div>
         </div>
-        <button class="sale-hits__btn sale-hits__btn--hidden action-btn btn-reset">Добавить в корзину</button>
+        <button class="sale-hits__btn sale-hits__btn--hidden action-btn btn-reset" type="button" data-cart-desktop>Добавить в корзину</button>
       </div>
       `;
 		})
 		.join('');
 	productsContainer.innerHTML += newProducts;
 };
-
-export default displayProducts;

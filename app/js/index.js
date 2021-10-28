@@ -1,11 +1,11 @@
 import displayMobileMenu from './modules/burgerMenu.js';
-import { displayFourItems, clickShowMore } from './modules/displayFourItems.js';
+import { showFourProducts, showMoreProducts } from './modules/showFourProducts.js';
 
 // Show burger menu
 displayMobileMenu();
 
 // Show 4 items in sale-hits
-displayFourItems();
+showFourProducts();
 
 // Display next 4 items when click on 'show-more' button
-clickShowMore();
+showMoreProducts();

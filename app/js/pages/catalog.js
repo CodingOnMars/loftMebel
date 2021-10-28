@@ -2,12 +2,11 @@ import displayMobileMenu from '../modules/burgerMenu.js';
 import get from '../modules/getElement.js';
 import { lockBody } from '../modules/lockBody.js';
 import '../modules/rangeSlider.js';
-import { products } from '../local-data/products.js';
-import displayProducts from '../modules/displayProducts.js';
+import { showProducts } from '../modules/showProducts.js';
 
 displayMobileMenu();
 
-displayProducts(products);
+showProducts(0, 16);
 
 // Show/hide filter list
 const filterBtn = get('.sorting__filter-btn');
