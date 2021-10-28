@@ -94,29 +94,33 @@
         }
     }
 
-    &__amount {
+    &__counter {
         margin-top: 5px;
-        display: flex;
-        align-items: center;
-    }
-
-    &__amount-btn {
-        padding: 4px 10px;
-        background-color: $burgerMenu-bg;
-        border-radius: 50%;
-    }
-
-    &__value--amount {
-        margin-right: 5px;
-        margin-left: 5px;
-        font-weight: 500;
-        color: $primary-color;
     }
 
     &__btn {
         padding-right: 11px;
         padding-left: 11px;
         background-color: $burgerMenu-bg;
+    }
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+
+
+    &__btn {
+        padding: 4px 10px;
+        background-color: $burgerMenu-bg;
+        border-radius: 50%;
+    }
+
+    &__value {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: 500;
+        color: $primary-color;
     }
 }
 

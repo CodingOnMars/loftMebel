@@ -60,6 +60,7 @@
         width: 27px;
         height: 27px;
         fill: $primary-color;
+        pointer-events: none;
     }
 
     &__title {
