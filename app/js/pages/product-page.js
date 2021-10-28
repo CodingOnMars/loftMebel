@@ -1,8 +1,8 @@
 import displayMobileMenu from '../modules/burgerMenu.js';
 import {
-	displayFourItems,
-	clickShowMore,
-} from '../modules/displayFourItems.js';
+	showFourProducts,
+	showMoreProducts,
+} from '../modules/showFourProducts.js';
 import get from '../modules/getElement.js';
 import selectImg from '../modules/selectImg.js';
 import '../modules/changeSelectBackground.js';
@@ -11,10 +11,10 @@ import '../modules/changeSelectBackground.js';
 displayMobileMenu();
 
 // Show 4 items in sale-hits
-displayFourItems();
+showFourProducts();
 
 // Display next 4 items when click on 'show-more' button
-clickShowMore();
+showMoreProducts();
 
 const preview = get('.gallery__preview');
 
