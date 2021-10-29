@@ -24,9 +24,40 @@ export const addToCart = () => {
 			};
 
 			// Check if the same item is already in cart
+			const cartItem = cartContainer.querySelector(
+				`[data-id="${productData.id}"]`
+			);
 
-			// Add item to cart
-			const cartItemHTML = `
+			const priceHTML = `
+      <div class="cart-item__price">
+        <p class="cart-discount__price cart-item__current-price">${productData.price}</p>
+      </div>
+      `;
+
+			const priceDiscountHTML = `
+      <div class="cart-item__price cart-discount">
+        <svg class="cart-discount__svg discount-svg" width="20" height="20">
+          <use xlink:href="images/symbol/svg/sprite.symbol.svg#sale-icon"></use>
+        </svg>
+        <p class="cart-discount__value">${
+					productData.discount !== '' ? productData.discount : ''
+				}</p>
+        <p class="cart-discount__old-price">${
+					productData.oldPrice !== '' ? productData.oldPrice : ''
+				}</p>
+        <p class="cart-discount__price cart-item__current-price">${
+					productData.price
+				}</p>
+      </div>
+      `;
+
+			if (cartItem) {
+				const counterEl = cartItem.querySelector('[data-counter]');
+				counterEl.innerText =
+					parseInt(counterEl.innerText) + parseInt(productData.count);
+			} else {
+				// Add item to cart
+				const cartItemHTML = `
         <div class="cart__item cart-item" data-id="${productData.id}">
             <div class="cart-item__container">
               <div class="cart-item__picture">
@@ -38,20 +69,11 @@ export const addToCart = () => {
               <div class="cart-item__inner">
                   <div class="cart-item__top">
                     <p class="cart-item__name">${productData.name}</p>
-                    <div class="cart-item__price cart-discount">
-                      <svg class="cart-discount__svg discount-svg" width="20" height="20">
-                        <use xlink:href="images/symbol/svg/sprite.symbol.svg#sale-icon"></use>
-                      </svg>
-                      <p class="cart-discount__value">${
-												productData.discount !== '' ? productData.discount : ''
-											}</p>
-                      <p class="cart-discount__old-price">${
-												productData.oldPrice !== '' ? productData.oldPrice : ''
-											}</p>
-                      <p class="cart-discount__price cart-item__current-price">${
-												productData.price
-											}</p>
-                    </div>
+                    ${
+											productData.discount && productData.oldPrice !== ''
+												? priceDiscountHTML
+												: priceHTML
+										}
                   </div>
                   <div class="cart-item__bottom">
                     <div class="cart-item__options">
@@ -63,20 +85,22 @@ export const addToCart = () => {
                       <span class="cart-item__name">Количество:</span>
                       <div class="cart-item__counter counter">
                         <button class="counter__btn btn-reset" data-action="minus">−</button>
-                        <span class="counter__value">${productData.count}</span>
+                        <span class="counter__value" data-counter>${
+													productData.count
+												}</span>
                         <button class="counter__btn btn-reset" data-action="plus">+</button>
                       </div>
                     </div>
                     <div class="cart-item__options">
                     <span class="cart-item__name">Размер(Ш×Д×В):</span>
                     <span class="cart-item__value">${productData.width} СМ × ${
-				productData.depth
-			} СМ × ${productData.height} СМ</span>
+					productData.depth
+				} СМ × ${productData.height} СМ</span>
                     </div>
                   </div>
                 </div>
             </div>
-              <button class="cart-item__btn btn-reset" type="button">
+              <button class="cart-item__btn btn-reset" type="button" data-action="remove">
                 <svg class="cart-item__svg" width="12" height="12">
                   <use xlink:href="images/symbol/svg/sprite.symbol.svg#close-cross-catalog">
                   </use>
@@ -85,7 +109,8 @@ export const addToCart = () => {
           </div>
         `;
 
-			cartContainer.innerHTML += cartItemHTML;
+				cartContainer.innerHTML += cartItemHTML;
+			}
 		}
 	});
 };

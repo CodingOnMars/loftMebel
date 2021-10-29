@@ -98,6 +98,7 @@ function build() {
 			'app/js/modules/*.js',
 			'app/js/vendor/*.js',
 			'app/js/local-data/*',
+			'app/js/cart/*.js',
 			'app/*.html',
 		],
 		{ base: 'app' }

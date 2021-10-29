@@ -103,6 +103,10 @@
         padding-left: 11px;
         background-color: $burgerMenu-bg;
     }
+
+    &__svg {
+        pointer-events: none;
+    }
 }
 
 .counter {
