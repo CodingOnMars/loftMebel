@@ -12,13 +12,9 @@
         font-weight: 400;
     }
 
-    &__current-price,
-    &__total-span {
-        font-weight: 500;
-    }
-
     &__total-span {
         padding: 4px 12px;
+        font-weight: 500;
         color: $white-color;
         background-color: $accent-color;
         border-radius: 7px;

@@ -1,4 +1,5 @@
 import { productsContainer } from '../modules/renderProducts.js';
+import { showTotalPrice } from './calcPrice.js';
 
 const cartContainer = document.querySelector('.cart__items');
 
@@ -29,13 +30,11 @@ export const addToCart = () => {
 			);
 
 			const priceHTML = `
-      <div class="cart-item__price">
-        <p class="cart-discount__price cart-item__current-price">${productData.price}</p>
-      </div>
+      <p class="cart-item__price">${productData.price}</p>
       `;
 
 			const priceDiscountHTML = `
-      <div class="cart-item__price cart-discount">
+      <div class="cart-item__discount cart-discount">
         <svg class="cart-discount__svg discount-svg" width="20" height="20">
           <use xlink:href="images/symbol/svg/sprite.symbol.svg#sale-icon"></use>
         </svg>
@@ -45,7 +44,7 @@ export const addToCart = () => {
         <p class="cart-discount__old-price">${
 					productData.oldPrice !== '' ? productData.oldPrice : ''
 				}</p>
-        <p class="cart-discount__price cart-item__current-price">${
+        <p class="cart-discount__price cart-item__price">${
 					productData.price
 				}</p>
       </div>
@@ -85,7 +84,7 @@ export const addToCart = () => {
                       <span class="cart-item__name">Количество:</span>
                       <div class="cart-item__counter counter">
                         <button class="counter__btn btn-reset" data-action="minus">−</button>
-                        <span class="counter__value" data-counter>${
+                        <span class="counter__value" data-counter="">${
 													productData.count
 												}</span>
                         <button class="counter__btn btn-reset" data-action="plus">+</button>
@@ -112,5 +111,6 @@ export const addToCart = () => {
 				cartContainer.innerHTML += cartItemHTML;
 			}
 		}
+		showTotalPrice();
 	});
 };

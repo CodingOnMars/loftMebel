@@ -1,4 +1,5 @@
 const cartContainer = document.querySelector('.cart__items');
+import { showTotalPrice } from './calcPrice.js';
 
 export const counterAndItemRemover = () => {
 	cartContainer.addEventListener('click', e => {
@@ -30,5 +31,7 @@ export const counterAndItemRemover = () => {
 		if (e.target.dataset.action === 'remove') {
 			e.target.closest('.cart-item').remove();
 		}
+
+		showTotalPrice();
 	});
 };
