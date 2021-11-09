@@ -31,7 +31,7 @@ export const renderProducts = products => {
               <use xlink:href="images/symbol/svg/sprite.symbol.svg#wishlist-icon"></use>
             </svg>
           </button>
-          <button class="sale-hits__btn-top sale-hits__btn-buy btn-reset" type="button" aria-label="Добавить в корзину" data-cart-mobile>
+          <button class="sale-hits__btn-top sale-hits__btn-buy btn-reset" type="button" aria-label="Добавить в корзину" data-cart-button>
             <svg class="sale-hits__svg wishlist-icon">
               <use xlink:href="images/symbol/svg/sprite.symbol.svg#bag-icon"></use>
             </svg>
@@ -64,7 +64,7 @@ export const renderProducts = products => {
               </div>
             </div>
         </div>
-        <button class="sale-hits__btn sale-hits__btn--hidden action-btn btn-reset" type="button" data-cart-desktop>Добавить в корзину</button>
+        <button class="sale-hits__btn sale-hits__btn--hidden action-btn btn-reset" type="button" data-cart-button>Добавить в корзину</button>
       </div>
       `;
 		})
