@@ -8,6 +8,7 @@ export const renderProducts = products => {
 			const {
 				id,
 				name,
+				color: { name: colorName, value: colorValue },
 				price,
 				oldPrice,
 				discountValue,
@@ -21,7 +22,7 @@ export const renderProducts = products => {
 				discountValue === null
 					? 'sale-hits__item'
 					: 'sale-hits__item sale-hits__item--discount'
-			}" data-id="${id}">
+			}" data-id="${id}" data-color-name="${colorName}" data-color-value="${colorValue}">
         <span class="sale-hits__discount">${
 					discountValue === null ? '' : `-${discountValue}%`
 				}</span>

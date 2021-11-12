@@ -2,6 +2,10 @@
 	{
 		"id": 0,
 		"name": "Валенсия Beige",
+		"color": {
+			"name": "бежевый",
+			"value": "#d2ad83"
+		},
 		"price": 2300,
 		"oldPrice": null,
 		"discountValue": null,
@@ -17,6 +21,10 @@
 	{
 		"id": 1,
 		"name": "Толикс-2 White Gloss",
+		"color": {
+			"name": "белый",
+			"value": "#e6e6e6"
+		},
 		"price": 4690,
 		"oldPrice": null,
 		"discountValue": null,
@@ -32,6 +40,10 @@
 	{
 		"id": 2,
 		"name": "Динс Velvet Yellow",
+		"color": {
+			"name": "желтый",
+			"value": "#ffc107"
+		},
 		"price": 28490,
 		"oldPrice": 37990,
 		"discountValue": 25,
@@ -47,6 +59,10 @@
 	{
 		"id": 3,
 		"name": "Кускен Navy Blue",
+		"color": {
+			"name": "темно-синий",
+			"value": "#3b4453"
+		},
 		"price": 22300,
 		"oldPrice": null,
 		"discountValue": null,
@@ -62,6 +78,10 @@
 	{
 		"id": 4,
 		"name": "Шерона Barhat Grey",
+		"color": {
+			"name": "серый",
+			"value": "#676566"
+		},
 		"price": 21990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -77,6 +97,10 @@
 	{
 		"id": 5,
 		"name": "Авиньон-1",
+		"color": {
+			"name": "дуб беленый",
+			"value": "#d4c2aa"
+		},
 		"price": 18990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -92,6 +116,10 @@
 	{
 		"id": 6,
 		"name": "Стелла Дуб Сонома",
+		"color": {
+			"name": "дуб сонома",
+			"value": "#d1c4b4"
+		},
 		"price": 8990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -107,6 +135,10 @@
 	{
 		"id": 7,
 		"name": "Равенна-1 Light",
+		"color": {
+			"name": "белый",
+			"value": "#ebebeb"
+		},
 		"price": 14990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -122,6 +154,10 @@
 	{
 		"id": 8,
 		"name": "Бенфлит Grey",
+		"color": {
+			"name": "серый",
+			"value": "#b1b1b1"
+		},
 		"price": 7200,
 		"oldPrice": null,
 		"discountValue": null,
@@ -137,6 +173,10 @@
 	{
 		"id": 9,
 		"name": "Тиффани Вудлайн Крем",
+		"color": {
+			"name": "ясень светлый",
+			"value": "#c5aa8c"
+		},
 		"price": 10990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -151,7 +191,11 @@
 	},
 	{
 		"id": 10,
-		"name": "Валенсия Beige",
+		"name": "Валенсия White",
+		"color": {
+			"name": "белый",
+			"value": "#e6e6e6"
+		},
 		"price": 19990,
 		"oldPrice": 21989,
 		"discountValue": 10,
@@ -166,7 +210,11 @@
 	},
 	{
 		"id": 11,
-		"name": "Лайт-3-170-240 Белый",
+		"name": "Лайт-3-170-240 Бежевый",
+		"color": {
+			"name": "бежевый",
+			"value": "#d8d3bd"
+		},
 		"price": 27990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -182,6 +230,10 @@
 	{
 		"id": 12,
 		"name": "Вилли Pink",
+		"color": {
+			"name": "розовый",
+			"value": "#af527e"
+		},
 		"price": 21990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -197,6 +249,10 @@
 	{
 		"id": 13,
 		"name": "Сан-Паулу Velvet Brown",
+		"color": {
+			"name": "светло-коричневый",
+			"value": "#d0b0a1"
+		},
 		"price": 18990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -212,6 +268,10 @@
 	{
 		"id": 14,
 		"name": "Стеллаж Варди",
+		"color": {
+			"name": "металлик",
+			"value": "#70665d"
+		},
 		"price": 10990,
 		"oldPrice": null,
 		"discountValue": null,
@@ -227,6 +287,10 @@
 	{
 		"id": 15,
 		"name": "Стеллаж модульный Ариана",
+		"color": {
+			"name": "бук кантри",
+			"value": "#dbc7ae"
+		},
 		"price": 12990,
 		"oldPrice": null,
 		"discountValue": null,
