@@ -107,4 +107,13 @@
             background-color: $tapestry;
         }
     }
+
+    .copyright__link {
+        transition: ease-in .3s color;
+
+        &:hover {
+            transition: ease-out .3s color;
+            color: $red-color;
+        }
+    }
 }

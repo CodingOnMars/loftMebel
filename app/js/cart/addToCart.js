@@ -13,6 +13,8 @@ export const addToCart = () => {
 			// Get data from the product card
 			const productData = {
 				id: card.dataset.id,
+				colorName: card.dataset.colorName,
+				colorValue: card.dataset.colorValue,
 				name: card.querySelector('.sale-hits__title').innerText,
 				imgSrc: card.querySelector('.sale-hits__img').src,
 				price: card.querySelector('.sale-hits__price').innerText,
@@ -77,8 +79,12 @@ export const addToCart = () => {
                   <div class="cart-item__bottom">
                     <div class="cart-item__options">
                       <span class="cart-item__name">Цвет:</span>
-                      <span class="cart-item__value">Желтый</span>
-                      <span class="cart-item__color cart-item__color--yellow"></span>
+                      <span class="cart-item__value">${
+												productData.colorName
+											}</span>
+                      <span class="cart-item__color" style="background-color:${
+												productData.colorValue
+											}"></span>
                     </div>
                     <div class="cart-item__options">
                       <span class="cart-item__name">Количество:</span>
