@@ -19,9 +19,10 @@
 		"gulp-concat": "^2.6.1",
 		"gulp-imagemin": "^7.1.0",
 		"gulp-px2rem-converter": "^1.5.9",
-		"gulp-sass": "^4.1.0",
+		"gulp-sass": "^5.0.0",
 		"gulp-svg-sprite": "^1.5.0",
 		"regenerator-runtime": "^0.13.9",
+		"sass": "^1.43.4",
 		"webpack": "^5.64.1",
 		"webpack-stream": "^7.0.0"
 	},
