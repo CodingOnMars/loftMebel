@@ -9,6 +9,9 @@
 	"author": "CodingOnMars",
 	"license": "ISC",
 	"devDependencies": {
+		"@babel/core": "^7.16.0",
+		"@babel/preset-env": "^7.16.4",
+		"babel-loader": "^8.2.3",
 		"browser-sync": "^2.27.5",
 		"del": "^6.0.0",
 		"gulp": "^4.0.2",
@@ -18,7 +21,9 @@
 		"gulp-px2rem-converter": "^1.5.9",
 		"gulp-sass": "^4.1.0",
 		"gulp-svg-sprite": "^1.5.0",
-		"gulp-uglify-es": "^3.0.0"
+		"regenerator-runtime": "^0.13.9",
+		"webpack": "^5.64.1",
+		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
 		"nouislider": "^15.4.0"

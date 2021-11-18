@@ -1,3 +1,5 @@
+import 'regenerator-runtime/runtime';
+
 const fetchProducts = async URL => {
 	try {
 		const response = await fetch(URL);

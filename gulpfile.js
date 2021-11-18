@@ -1,14 +1,23 @@
 const { src, dest, watch, parallel, series } = require('gulp');
-
+const gulp = require('gulp');
 const scss = require('gulp-sass');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
-const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const svgSprite = require('gulp-svg-sprite');
 const pxToRem = require('gulp-px2rem-converter');
+const webpack = require('webpack-stream');
+const webpackConfig = require('./app/webpack.config');
+
+// Webpack bundle + Babel transpile
+function webpackBundle() {
+	return gulp
+		.src('app/js/burgerMenu.js', 'app/js/index.js')
+		.pipe(webpack(webpackConfig), webpack)
+		.pipe(gulp.dest('./dist/js'));
+}
 
 function svgSprites() {
 	return src('app/images/svg/**.svg')
@@ -52,17 +61,6 @@ function images() {
 		.pipe(dest('dist/images'));
 }
 
-// function scripts() {
-// 	return src([
-// 		// 'node_modules/jquery/dist/jquery.js',
-// 		'app/js/main.js',
-// 	])
-// 		.pipe(concat('main.min.js'))
-// 		.pipe(uglify())
-// 		.pipe(dest('app/js'))
-// 		.pipe(browserSync.stream());
-// }
-
 function scripts() {
 	return src([
 		'app/js/index.js',
@@ -92,13 +90,8 @@ function build() {
 		[
 			'app/css/style.min.css',
 			'app/fonts/**/*',
-			// 'app/js/main.min.js',
-			'app/js/index.js',
-			'app/js/pages/*.js',
-			'app/js/modules/*.js',
 			'app/js/vendor/*.js',
 			'app/js/local-data/*',
-			'app/js/cart/*.js',
 			'app/*.html',
 		],
 		{ base: 'app' }
@@ -107,7 +100,6 @@ function build() {
 
 function watching() {
 	watch(['app/scss/**/*.scss'], styles);
-	// watch(['app/js/main.js', '!app/js/main.min.js'], scripts);
 	watch(['app/js/**/*.js'], scripts);
 	watch(['app/*.html']).on('change', browserSync.reload);
 	// watch(['app/images/svg/**.svg'], svgSprites);
@@ -121,5 +113,5 @@ exports.images = images;
 exports.svgSprites = svgSprites;
 exports.cleanDist = cleanDist;
 
-exports.build = series(cleanDist, svgSprites, images, build);
+exports.build = series(cleanDist, webpackBundle, svgSprites, images, build);
 exports.default = parallel(styles, svgSprites, browsersync, watching);
