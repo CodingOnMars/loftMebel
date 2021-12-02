@@ -1,6 +1,6 @@
-const path = require('path');
+import path from 'path';
 
-module.exports = {
+const webpackConfig = {
 	mode: 'production',
 	entry: {
 		burger: './app/js/burgerMenu.js',
@@ -11,7 +11,7 @@ module.exports = {
 	},
 	output: {
 		filename: '[name]-bundle.js',
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve('dist'),
 	},
 	optimization: {
 		minimize: true,
@@ -34,3 +34,5 @@ module.exports = {
 		],
 	},
 };
+
+export default webpackConfig;

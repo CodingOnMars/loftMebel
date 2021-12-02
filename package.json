@@ -1,10 +1,12 @@
 {
-	"name": "gulp-start",
+	"name": "gulp-esm",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"gulp": "gulp",
+		"build": "build"
 	},
 	"author": "CodingOnMars",
 	"license": "ISC",
@@ -12,12 +14,13 @@
 		"@babel/core": "^7.16.0",
 		"@babel/preset-env": "^7.16.4",
 		"babel-loader": "^8.2.3",
-		"browser-sync": "^2.27.5",
+		"browser-sync": "^2.27.7",
 		"del": "^6.0.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-concat": "^2.6.1",
-		"gulp-imagemin": "^7.1.0",
+		"gulp-imagemin": "^8.0.0",
+		"gulp-postcss": "^9.0.1",
 		"gulp-px2rem-converter": "^1.5.9",
 		"gulp-sass": "^5.0.0",
 		"gulp-svg-sprite": "^1.5.0",
