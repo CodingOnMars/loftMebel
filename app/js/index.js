@@ -1,5 +1,8 @@
 import displayMobileMenu from './modules/burgerMenu.js';
-import { showFourProducts, showMoreProducts } from './modules/showFourProducts.js';
+import {
+	showFourProducts,
+	showMoreProducts,
+} from './modules/showFourProducts.js';
 
 // Show burger menu
 displayMobileMenu();

@@ -1,17 +1,54 @@
-const { src, dest, watch, parallel, series } = require('gulp');
+import gulp from 'gulp';
+import sass from 'sass';
+import gulpSass from 'gulp-sass';
+import concat from 'gulp-concat';
+import sync from 'browser-sync';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import imagemin, { mozjpeg, optipng, svgo } from 'gulp-imagemin';
+import del from 'del';
+import svgSprite from 'gulp-svg-sprite';
+import pxToRem from 'gulp-px2rem-converter';
+import webpack from 'webpack-stream';
+import webpackConfig from './app/webpack.config.js';
 
-const scss = require('gulp-sass');
-const concat = require('gulp-concat');
-const browserSync = require('browser-sync').create();
-const uglify = require('gulp-uglify-es').default;
-const autoprefixer = require('gulp-autoprefixer');
-const imagemin = require('gulp-imagemin');
-const del = require('del');
-const svgSprite = require('gulp-svg-sprite');
-const pxToRem = require('gulp-px2rem-converter');
+const scss = gulpSass(sass);
 
-function svgSprites() {
-	return src('app/images/svg/**.svg')
+// Styles
+export const styles = () => {
+	return gulp
+		.src('app/scss/style.scss')
+		.pipe(scss({ outputStyle: 'compressed' }))
+		.pipe(
+			postcss([
+				autoprefixer({
+					overrideBrowserslist: ['last 5 version'],
+					grid: true,
+				}),
+			])
+		)
+		.pipe(concat('style.min.css'))
+		.pipe(pxToRem())
+		.pipe(gulp.dest('app/css'))
+		.pipe(sync.stream());
+};
+
+// Scripts for development
+export const scripts = () => {
+	return gulp
+		.src([
+			'app/js/index.js',
+			'app/js/pages/*.js',
+			'app/js/modules/*.js',
+			'app/js/vendor/*.js',
+		])
+		.pipe(sync.stream());
+};
+
+// SVG sprites
+export const svgSprites = () => {
+	return gulp
+		.src('app/images/svg/**.svg')
 		.pipe(
 			svgSprite({
 				mode: {
@@ -22,26 +59,50 @@ function svgSprites() {
 				},
 			})
 		)
-		.pipe(dest('app/images'));
-}
+		.pipe(gulp.dest('app/images'));
+};
 
-function browsersync() {
-	browserSync.init({
+// Browser sync (live reload)
+export const browserSync = () => {
+	sync.init({
+		ui: false,
+		notify: false,
 		server: {
 			baseDir: 'app/',
 		},
 	});
-}
+};
 
-function cleanDist() {
-	return del('dist');
-}
+// Build for production except scripts (they are handled by webpackBundle)
+export const prodBuild = () => {
+	return gulp
+		.src(
+			[
+				'app/css/style.min.css',
+				'app/fonts/**/*',
+				'app/js/vendor/*.js',
+				'app/js/local-data/*',
+				'app/*.html',
+			],
+			{ base: 'app' }
+		)
+		.pipe(gulp.dest('dist'));
+};
 
-function images() {
-	return src('app/images/**/*')
+// Scripts for production. Webpack bundle + Babel transpile
+export const webpackBundle = () => {
+	return gulp
+		.src('app/js/burgerMenu.js', 'app/js/index.js')
+		.pipe(webpack(webpackConfig), webpack)
+		.pipe(gulp.dest('./dist/js'));
+};
+
+// Images optimization
+export const images = () => {
+	return gulp
+		.src('app/images/**/*')
 		.pipe(
 			imagemin([
-				imagemin.gifsicle({ interlaced: true }),
 				imagemin.mozjpeg({ quality: 75, progressive: true }),
 				imagemin.optipng({ optimizationLevel: 5 }),
 				imagemin.svgo({
@@ -49,77 +110,23 @@ function images() {
 				}),
 			])
 		)
-		.pipe(dest('dist/images'));
-}
+		.pipe(gulp.dest('dist/images'));
+};
 
-// function scripts() {
-// 	return src([
-// 		// 'node_modules/jquery/dist/jquery.js',
-// 		'app/js/main.js',
-// 	])
-// 		.pipe(concat('main.min.js'))
-// 		.pipe(uglify())
-// 		.pipe(dest('app/js'))
-// 		.pipe(browserSync.stream());
-// }
-
-function scripts() {
-	return src([
-		'app/js/index.js',
-		'app/js/pages/*.js',
-		'app/js/modules/*.js',
-		'app/js/vendor/*.js',
-	]).pipe(browserSync.stream());
-}
-
-function styles() {
-	return src('app/scss/style.scss')
-		.pipe(scss({ outputStyle: 'compressed' }))
-		.pipe(concat('style.min.css'))
-		.pipe(pxToRem())
-		.pipe(
-			autoprefixer({
-				overrideBrowserslist: ['last 5 version'],
-				grid: true,
-			})
-		)
-		.pipe(dest('app/css'))
-		.pipe(browserSync.stream());
-}
-
-function build() {
-	return src(
-		[
-			'app/css/style.min.css',
-			'app/fonts/**/*',
-			// 'app/js/main.min.js',
-			'app/js/index.js',
-			'app/js/pages/*.js',
-			'app/js/modules/*.js',
-			'app/js/vendor/*.js',
-			'app/js/local-data/*',
-			'app/js/cart/*.js',
-			'app/*.html',
-		],
-		{ base: 'app' }
-	).pipe(dest('dist'));
-}
-
-function watching() {
-	watch(['app/scss/**/*.scss'], styles);
-	// watch(['app/js/main.js', '!app/js/main.min.js'], scripts);
-	watch(['app/js/**/*.js'], scripts);
-	watch(['app/*.html']).on('change', browserSync.reload);
+// Watch
+export const watch = () => {
+	gulp.watch(['app/scss/**/*.scss'], styles);
+	gulp.watch(['app/js/**/*.js'], scripts);
+	gulp.watch(['app/*.html']).on('change', sync.reload);
 	// watch(['app/images/svg/**.svg'], svgSprites);
-}
+};
 
-exports.styles = styles;
-exports.watching = watching;
-exports.browsersync = browsersync;
-exports.scripts = scripts;
-exports.images = images;
-exports.svgSprites = svgSprites;
-exports.cleanDist = cleanDist;
+// Clean dist folder
+export const cleanDist = () => del('dist');
 
-exports.build = series(cleanDist, svgSprites, images, build);
-exports.default = parallel(styles, svgSprites, browsersync, watching);
+// Dev mode - gulp
+export default gulp.parallel(styles, svgSprites, watch, browserSync);
+
+// Production build - gulp build
+export const build = () =>
+	gulp.series(cleanDist, webpackBundle, svgSprites, images, prodBuild);

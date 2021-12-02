@@ -1,3 +1,6 @@
+// Use this only for production build to avoid conflicts with webpack
+// import 'regenerator-runtime/runtime';
+
 const fetchProducts = async URL => {
 	try {
 		const response = await fetch(URL);

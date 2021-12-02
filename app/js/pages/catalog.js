@@ -4,6 +4,7 @@ import { lockBody } from '../modules/lockBody.js';
 import '../modules/rangeSlider.js';
 import { showProducts } from '../modules/showProducts.js';
 
+// Show burger menu
 displayMobileMenu();
 
 showProducts(0, 16);
